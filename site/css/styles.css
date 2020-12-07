@@ -1,0 +1,33 @@
+body {
+    background: #fff;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #0A0A23;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #8364ff;
+}
+
+h3 {
+    font-size: 1.50rem;
+    font-weight: 400;
+}
+
+table {
+    text-align: left;
+}
+
+th, td {
+    padding-right: 15px;
+}
