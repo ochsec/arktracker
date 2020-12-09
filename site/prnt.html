@@ -2,460 +2,792 @@
     <!DOCTYPE html>
     <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Arktracker.info</title>
-        <link rel="stylesheet" href="./css/styles.css" type="text/css" media="all">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Arktracker.info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     <body>
-        <h1>Arktracker.info</h1>
-        <table>
-            <tr>
-                <th>Funds</th>
-                <th>
-                    <a href="./arkk.html">ARKK</a>
-                </th>
-                <th>
-                    <a href="./arkf.html">ARKF</a>
-                </th>
-                <th>
-                    <a href="./arkg.html">ARKG</a>
-                </th>
-                <th>
-                    <a href="./arkq.html">ARKQ</a>
-                </th>
-                <th>
-                    <a href="./arkw.html">ARKW</a>
-                </th>
-                <th>
-                    <a href="./izrl.html">IZRL</a>
-                </th>
-                <th>
-                    <a href="./prnt.html">PRNT</a>
-                </th>
-            </tr>
-        </table>
-        <hr>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Arktracker.info</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link" href="#">ETFs:</a>
+            <a class="nav-link" aria-current="page" active href="./arkk.html">ARKK</a>
+            <a class="nav-link" href="./arkf.html">ARKF</a>
+            <a class="nav-link" href="./arkg.html">ARKG</a>
+            <a class="nav-link" href="./arkq.html">ARKQ</a>
+            <a class="nav-link" href="./arkw.html">ARKW</a>
+            <a class="nav-link" href="./izrl.html">IZRL</a>
+            <a class="nav-link" href="./prnt.html">PRNT</a>
+            </div>
+        </div>    
+        </div>
+    </nav>
     
-        <h2>PRNT / The 3D Printing ETF</h2>
-        <h3>Holdings</h3>
-        <table>
-            <tr>
-                <th>Company</th>
-                <th>Ticker</th>
-                <th>Shares</th>
-                <th>Market Value ($)</th>
-                <th>Weight %</th>
+            <div class="container-fluid">
+                <div class="row pt-3">
+                <h2>PRNT / The 3D Printing ETF</h2>
+                </div>
+                <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="holdings-tab" data-bs-toggle="tab" href="#holdings" role="tab" aria-controls="holdings" aria-selected="true">Holdings</a>
+                    <a class="nav-link" id="day-1-tab" data-bs-toggle="tab" href="#day-1" role="tab" aria-controls="day-1" aria-selected="false">1 Day &Delta;s</a>
+                    <!-- <a class="nav-link" id="day7-tab" data-bs-toggle="tab" href="#day7" role="tab" aria-controls="day7" aria-selected="false">7 Day &Delta;s</a> -->        
+                </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="holdings" role="tabpanel" aria-labelledby="holdings">
+                        <div class="row pt-3">
+                            <h3>Holdings as of 12/8/2020</h3>
+                        </div>
+                        <table class="table table-hover">
+                        <tr>
+                            <th>Company</th>
+                            <th>Ticker</th>
+                            <th>Shares</th>
+                            <th>Market Value ($)</th>
+                            <th>Weight %</th>
+                        </tr>
+            
+                <tr>
+                    <td>SLM SOLUTIONS GROUP AG</td>
+                    <td>AM3D</td>
+                    <td>337799.0</td>
+                    <td>7124300.62</td>
+                    <td>6.99</td>
+                </tr>
+        
+                <tr>
+                    <td>3D SYSTEMS CORP</td>
+                    <td>DDD</td>
+                    <td>654429.0</td>
+                    <td>6773340.15</td>
+                    <td>6.65</td>
+                </tr>
+        
+                <tr>
+                    <td>HP INC</td>
+                    <td>HPQ</td>
+                    <td>224700.0</td>
+                    <td>5284944.0</td>
+                    <td>5.19</td>
+                </tr>
+        
+                <tr>
+                    <td>STRAUMANN HOLDING AG-REG</td>
+                    <td>STMN</td>
+                    <td>4092.0</td>
+                    <td>4830226.07</td>
+                    <td>4.74</td>
+                </tr>
+        
+                <tr>
+                    <td>PTC INC</td>
+                    <td>PTC</td>
+                    <td>42930.0</td>
+                    <td>4778109.0</td>
+                    <td>4.69</td>
+                </tr>
+        
+                <tr>
+                    <td>MGI DIGITAL GRAPHIC TECHNOLO</td>
+                    <td>ALMDG</td>
+                    <td>79622.0</td>
+                    <td>4569273.46</td>
+                    <td>4.48</td>
+                </tr>
+        
+                <tr>
+                    <td>TRIMBLE INC</td>
+                    <td>TRMB</td>
+                    <td>72218.0</td>
+                    <td>4556955.8</td>
+                    <td>4.47</td>
+                </tr>
+        
+                <tr>
+                    <td>MATERIALISE NV-ADR</td>
+                    <td>MTLS</td>
+                    <td>90169.0</td>
+                    <td>4540910.84</td>
+                    <td>4.46</td>
+                </tr>
+        
+                <tr>
+                    <td>ALTAIR ENGINEERING INC - A</td>
+                    <td>ALTR</td>
+                    <td>82143.0</td>
+                    <td>4524436.44</td>
+                    <td>4.44</td>
+                </tr>
+        
+                <tr>
+                    <td>PROTO LABS INC</td>
+                    <td>PRLB</td>
+                    <td>30311.0</td>
+                    <td>4467235.18</td>
+                    <td>4.38</td>
+                </tr>
+        
+                <tr>
+                    <td>STRATASYS LTD</td>
+                    <td>SSYS</td>
+                    <td>252613.0</td>
+                    <td>4448514.93</td>
+                    <td>4.37</td>
+                </tr>
+        
+                <tr>
+                    <td>RENISHAW PLC</td>
+                    <td>RSW</td>
+                    <td>58822.0</td>
+                    <td>4438951.52</td>
+                    <td>4.36</td>
+                </tr>
+        
+                <tr>
+                    <td>EXONE CO/THE</td>
+                    <td>XONE</td>
+                    <td>354503.0</td>
+                    <td>4314301.51</td>
+                    <td>4.23</td>
+                </tr>
+        
+                <tr>
+                    <td>AUTODESK INC</td>
+                    <td>ADSK</td>
+                    <td>14822.0</td>
+                    <td>4215080.36</td>
+                    <td>4.14</td>
+                </tr>
+        
+                <tr>
+                    <td>DASSAULT SYSTEMES SE</td>
+                    <td>DSY</td>
+                    <td>20412.0</td>
+                    <td>3825535.55</td>
+                    <td>3.75</td>
+                </tr>
+        
+                <tr>
+                    <td>MICROSOFT CORP</td>
+                    <td>MSFT</td>
+                    <td>17150.0</td>
+                    <td>3704571.5</td>
+                    <td>3.64</td>
+                </tr>
+        
+                <tr>
+                    <td>ANSYS INC</td>
+                    <td>ANSS</td>
+                    <td>10737.0</td>
+                    <td>3664323.36</td>
+                    <td>3.6</td>
+                </tr>
+        
+                <tr>
+                    <td>ALIGN TECHNOLOGY INC</td>
+                    <td>ALGN</td>
+                    <td>3250.0</td>
+                    <td>1676220.0</td>
+                    <td>1.65</td>
+                </tr>
+        
+                <tr>
+                    <td>HEXAGON AB-B SHS</td>
+                    <td>HEXAB</td>
+                    <td>14486.0</td>
+                    <td>1222268.28</td>
+                    <td>1.2</td>
+                </tr>
+        
+                <tr>
+                    <td>GENERAL ELECTRIC CO</td>
+                    <td>GE</td>
+                    <td>109466.0</td>
+                    <td>1199747.36</td>
+                    <td>1.18</td>
+                </tr>
+        
+                <tr>
+                    <td>AMETEK INC</td>
+                    <td>AME</td>
+                    <td>10088.0</td>
+                    <td>1196134.16</td>
+                    <td>1.17</td>
+                </tr>
+        
+                <tr>
+                    <td>KAISER ALUMINUM CORP</td>
+                    <td>KALU</td>
+                    <td>11995.0</td>
+                    <td>1149840.7</td>
+                    <td>1.13</td>
+                </tr>
+        
+                <tr>
+                    <td>FARO TECHNOLOGIES INC</td>
+                    <td>FARO</td>
+                    <td>17191.0</td>
+                    <td>1154547.56</td>
+                    <td>1.13</td>
+                </tr>
+        
+                <tr>
+                    <td>ULTRA CLEAN HOLDINGS INC</td>
+                    <td>UCTT</td>
+                    <td>31186.0</td>
+                    <td>1133922.96</td>
+                    <td>1.11</td>
+                </tr>
+        
+                <tr>
+                    <td>ARCONIC CORP</td>
+                    <td>ARNC</td>
+                    <td>33302.0</td>
+                    <td>1018042.14</td>
+                    <td>1.0</td>
+                </tr>
+        
+                <tr>
+                    <td>BERTRANDT AG</td>
+                    <td>BDT</td>
+                    <td>20209.0</td>
+                    <td>989689.76</td>
+                    <td>0.97</td>
+                </tr>
+        
+                <tr>
+                    <td>MOOG INC-CLASS A</td>
+                    <td>MOG/A</td>
+                    <td>11645.0</td>
+                    <td>969329.8</td>
+                    <td>0.95</td>
+                </tr>
+        
+                <tr>
+                    <td>OC OERLIKON CORP AG-REG</td>
+                    <td>OERL</td>
+                    <td>97627.0</td>
+                    <td>949258.15</td>
+                    <td>0.93</td>
+                </tr>
+        
+                <tr>
+                    <td>LINCOLN ELECTRIC HOLDINGS</td>
+                    <td>LECO</td>
+                    <td>7602.0</td>
+                    <td>908515.02</td>
+                    <td>0.89</td>
+                </tr>
+        
+                <tr>
+                    <td>MICHELIN (CGDE)</td>
+                    <td>ML</td>
+                    <td>7099.0</td>
+                    <td>901588.56</td>
+                    <td>0.88</td>
+                </tr>
+        
+                <tr>
+                    <td>SIEMENS AG-REG</td>
+                    <td>SIE</td>
+                    <td>5879.0</td>
+                    <td>814263.96</td>
+                    <td>0.8</td>
+                </tr>
+        
+                <tr>
+                    <td>AEROJET ROCKETDYNE HOLDINGS</td>
+                    <td>AJRD</td>
+                    <td>19194.0</td>
+                    <td>801925.32</td>
+                    <td>0.79</td>
+                </tr>
+        
+                <tr>
+                    <td>STRYKER CORP</td>
+                    <td>SYK</td>
+                    <td>3397.0</td>
+                    <td>799823.65</td>
+                    <td>0.78</td>
+                </tr>
+        
+                <tr>
+                    <td>MEDTRONIC PLC</td>
+                    <td>MDT UN</td>
+                    <td>7068.0</td>
+                    <td>785820.24</td>
+                    <td>0.77</td>
+                </tr>
+        
+                <tr>
+                    <td>UNITED PARCEL SERVICE-CL B</td>
+                    <td>UPS</td>
+                    <td>4431.0</td>
+                    <td>737274.09</td>
+                    <td>0.72</td>
+                </tr>
+        
+                <tr>
+                    <td>NUVASIVE INC</td>
+                    <td>NUVA</td>
+                    <td>14278.0</td>
+                    <td>667496.5</td>
+                    <td>0.66</td>
+                </tr>
+        
+                <tr>
+                    <td>ALLEGHENY TECHNOLOGIES INC</td>
+                    <td>ATI</td>
+                    <td>12301.0</td>
+                    <td>210839.14</td>
+                    <td>0.21</td>
+                </tr>
+        
+                <tr>
+                    <td>CARPENTER TECHNOLOGY</td>
+                    <td>CRS</td>
+                    <td>6189.0</td>
+                    <td>179419.11</td>
+                    <td>0.18</td>
+                </tr>
+        
+                <tr>
+                    <td>HEXCEL CORP</td>
+                    <td>HXL</td>
+                    <td>3153.0</td>
+                    <td>169915.17</td>
+                    <td>0.17</td>
+                </tr>
+        
+                <tr>
+                    <td>SGL CARBON SE</td>
+                    <td>SGL</td>
+                    <td>33370.0</td>
+                    <td>154735.77</td>
+                    <td>0.15</td>
+                </tr>
+        
+                <tr>
+                    <td>TORAY INDUSTRIES INC</td>
+                    <td>3402</td>
+                    <td>23608.0</td>
+                    <td>138409.31</td>
+                    <td>0.14</td>
+                </tr>
+        
+                <tr>
+                    <td>XEROX HOLDINGS CORP</td>
+                    <td>XRX UN</td>
+                    <td>5736.0</td>
+                    <td>131124.96</td>
+                    <td>0.13</td>
+                </tr>
+        
+                <tr>
+                    <td>VOESTALPINE AG</td>
+                    <td>VOE</td>
+                    <td>4089.0</td>
+                    <td>137377.57</td>
+                    <td>0.13</td>
+                </tr>
+        
+                <tr>
+                    <td>EVONIK INDUSTRIES AG</td>
+                    <td>EVK</td>
+                    <td>4249.0</td>
+                    <td>134779.47</td>
+                    <td>0.13</td>
+                </tr>
+        
+                <tr>
+                    <td>DUPONT DE NEMOURS INC</td>
+                    <td>DD</td>
+                    <td>1934.0</td>
+                    <td>129210.54</td>
+                    <td>0.13</td>
+                </tr>
+        
+                <tr>
+                    <td>EASTMAN CHEMICAL CO</td>
+                    <td>EMN</td>
+                    <td>1333.0</td>
+                    <td>137525.61</td>
+                    <td>0.13</td>
+                </tr>
+        
+                <tr>
+                    <td>SANDVIK AB</td>
+                    <td>SAND</td>
+                    <td>5906.0</td>
+                    <td>135703.59</td>
+                    <td>0.13</td>
+                </tr>
+        
+                <tr>
+                    <td>ARKEMA</td>
+                    <td>AKE</td>
+                    <td>1039.0</td>
+                    <td>118294.32</td>
+                    <td>0.12</td>
+                </tr>
+        
+                <tr>
+                    <td>3M CO</td>
+                    <td>MMM</td>
+                    <td>675.0</td>
+                    <td>116410.5</td>
+                    <td>0.11</td>
+                </tr>
+        
+                <tr>
+                    <td>KONINKLIJKE DSM NV</td>
+                    <td>DSM</td>
+                    <td>673.0</td>
+                    <td>111260.88</td>
+                    <td>0.11</td>
+                </tr>
+        
+                <tr>
+                    <td>HENKEL AG & CO KGAA VORZUG</td>
+                    <td>HEN3</td>
+                    <td>1074.0</td>
+                    <td>116115.84</td>
+                    <td>0.11</td>
+                </tr>
+        
+            </table>
+            <a href="https://ark-funds.com/wp-content/fundsiteliterature/csv/THE_3D_PRINTING_ETF_PRNT_HOLDINGS.csv">Data Source</a>
+            </div>
+        
+            <div class="tab-pane fade" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
+                <div class="container-fluid">
+                    <div class="row pt-3">
+                        <h3>1 Day Changes 12/7/2020 - 12/8/2020</h3>
+                    <table class="table table-hover">
+                        <tr>
+                            <th>Company</th>
+                            <th>Ticker</th>
+                            <th>&Delta; Shares</th>
+                            <th>&Delta; Market Value ($)</th>
+                            <th>&Delta; Weight %</th>
+                        </tr>
+        
+                <tr>
+                    <td>SLM SOLUTIONS GROUP AG</td>
+                    <td>AM3D</td>
+            <td class="table-success">+5096</td><td class="table-success">+243013</td><td class="table-success">+0.07</td>
             </tr>
-
-            <tr>
-                <td>SLM SOLUTIONS GROUP AG</td>
-                <td>AM3D</td>
-                <td>337799.0</td>
-                <td>7124300.62</td>
-                <td>6.99</td>
+        
+                <tr>
+                    <td>3D SYSTEMS CORP</td>
+                    <td>DDD</td>
+            <td class="table-success">+9682</td><td class="table-success">+190473</td><td class="table-success">+0.03</td>
             </tr>
+        
+                <tr>
+                    <td>HP INC</td>
+                    <td>HPQ</td>
+            <td class="table-success">+3363</td><td class="table-success">+43683</td><td class="table-danger">-0.08</td>
+            </tr>
+        
+                <tr>
+                    <td>STRAUMANN HOLDING AG-REG</td>
+                    <td>STMN</td>
+            <td class="table-success">+60</td><td class="table-success">+107860</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>PTC INC</td>
+                    <td>PTC</td>
+            <td class="table-success">+641</td><td class="table-success">+77686</td><td class="table-danger">-0.04</td>
+            </tr>
+        
+                <tr>
+                    <td>MGI DIGITAL GRAPHIC TECHNOLO</td>
+                    <td>ALMDG</td>
+            <td class="table-success">+1190</td><td class="table-success">+200331</td><td class="table-success">+0.08</td>
+            </tr>
+        
+                <tr>
+                    <td>TRIMBLE INC</td>
+                    <td>TRMB</td>
+            <td class="table-success">+1073</td><td class="table-success">+69129</td><td class="table-danger">-0.05</td>
+            </tr>
+        
+                <tr>
+                    <td>MATERIALISE NV-ADR</td>
+                    <td>MTLS</td>
+            <td class="table-success">+1364</td><td class="table-danger">-47643</td><td class="table-danger">-0.16</td>
+            </tr>
+        
+                <tr>
+                    <td>ALTAIR ENGINEERING INC - A</td>
+                    <td>ALTR</td>
+            <td class="table-success">+1214</td><td class="table-success">+120280</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>PROTO LABS INC</td>
+                    <td>PRLB</td>
+            <td class="table-success">+449</td><td class="table-success">+275207</td><td class="table-success">+0.16</td>
+            </tr>
+        
+                <tr>
+                    <td>STRATASYS LTD</td>
+                    <td>SSYS</td>
+            <td class="table-success">+4530</td><td class="table-success">+159159</td><td class="table-success">+0.05</td>
+            </tr>
+        
+                <tr>
+                    <td>RENISHAW PLC</td>
+                    <td>RSW</td>
+            <td class="table-success">+872</td><td class="table-success">+66010</td><td class="table-danger">-0.04</td>
+            </tr>
+        
+                <tr>
+                    <td>EXONE CO/THE</td>
+                    <td>XONE</td>
+            <td class="table-success">+5373</td><td class="table-success">+212024</td><td class="table-success">+0.1</td>
+            </tr>
+        
+                <tr>
+                    <td>AUTODESK INC</td>
+                    <td>ADSK</td>
+            <td class="table-success">+216</td><td class="table-success">+113715</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>DASSAULT SYSTEMES SE</td>
+                    <td>DSY</td>
+            <td class="table-success">+301</td><td class="table-success">+76336</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>MICROSOFT CORP</td>
+                    <td>MSFT</td>
+            <td class="table-success">+256</td><td class="table-success">+84356</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>ANSYS INC</td>
+                    <td>ANSS</td>
+            <td class="table-success">+160</td><td class="table-success">+48152</td><td class="table-danger">-0.04</td>
+            </tr>
+        
+                <tr>
+                    <td>ALIGN TECHNOLOGY INC</td>
+                    <td>ALGN</td>
+            <td class="table-success">+48</td><td class="table-success">+18512</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>HEXAGON AB-B SHS</td>
+                    <td>HEXAB</td>
+            <td class="table-success">+212</td><td class="table-success">+12070</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>GENERAL ELECTRIC CO</td>
+                    <td>GE</td>
+            <td class="table-success">+1558</td><td class="table-success">+27866</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>AMETEK INC</td>
+                    <td>AME</td>
+            <td class="table-success">+149</td><td class="table-success">+27208</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>KAISER ALUMINUM CORP</td>
+                    <td>KALU</td>
+            <td class="table-success">+175</td><td class="table-success">+31550</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>FARO TECHNOLOGIES INC</td>
+                    <td>FARO</td>
+            <td class="table-success">+253</td><td class="table-success">+18346</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>ULTRA CLEAN HOLDINGS INC</td>
+                    <td>UCTT</td>
+            <td class="table-success">+473</td><td class="table-success">+30097</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>ARCONIC CORP</td>
+                    <td>ARNC</td>
+            <td class="table-success">+490</td><td class="table-success">+72728</td><td class="table-success">+0.05</td>
+            </tr>
+        
+                <tr>
+                    <td>BERTRANDT AG</td>
+                    <td>BDT</td>
+            <td class="table-success">+292</td><td class="table-success">+9275</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>MOOG INC-CLASS A</td>
+                    <td>MOG/A</td>
+            <td class="table-success">+173</td><td class="table-success">+35738</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>OC OERLIKON CORP AG-REG</td>
+                    <td>OERL</td>
+            <td class="table-success">+1442</td><td class="table-success">+13803</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>LINCOLN ELECTRIC HOLDINGS</td>
+                    <td>LECO</td>
+            <td class="table-success">+112</td><td class="table-success">+22747</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>MICHELIN (CGDE)</td>
+                    <td>ML</td>
+            <td class="table-success">+103</td><td class="table-success">+15016</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>SIEMENS AG-REG</td>
+                    <td>SIE</td>
+            <td class="table-success">+87</td><td class="table-success">+25772</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>AEROJET ROCKETDYNE HOLDINGS</td>
+                    <td>AJRD</td>
+            <td class="table-success">+286</td><td class="table-success">+23482</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>STRYKER CORP</td>
+                    <td>SYK</td>
+            <td class="table-success">+50</td><td class="table-success">+7254</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>MEDTRONIC PLC</td>
+                    <td>MDT UN</td>
+            <td class="table-success">+103</td><td class="table-success">+1491</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>UNITED PARCEL SERVICE-CL B</td>
+                    <td>UPS</td>
+            <td class="table-success">+65</td><td class="table-success">+6100</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>NUVASIVE INC</td>
+                    <td>NUVA</td>
+            <td class="table-success">+212</td><td class="table-success">+11739</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>ALLEGHENY TECHNOLOGIES INC</td>
+                    <td>ATI</td>
+            <td class="table-success">+184</td><td class="table-success">+972</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>CARPENTER TECHNOLOGY</td>
+                    <td>CRS</td>
+            <td class="table-success">+95</td><td class="table-success">+4155</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>HEXCEL CORP</td>
+                    <td>HXL</td>
+            <td class="table-success">+49</td><td class="table-success">+560</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>SGL CARBON SE</td>
+                    <td>SGL</td>
+            <td class="table-success">+501</td><td class="table-danger">-5071</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>TORAY INDUSTRIES INC</td>
+                    <td>3402</td>
+            <td class="table-success">+300</td><td class="table-success">+270</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>XEROX HOLDINGS CORP</td>
+                    <td>XRX UN</td>
+            <td class="table-success">+87</td><td class="table-success">+1310</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>VOESTALPINE AG</td>
+                    <td>VOE</td>
+            <td class="table-success">+61</td><td class="table-success">+997</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>EVONIK INDUSTRIES AG</td>
+                    <td>EVK</td>
+            <td class="table-success">+64</td><td class="table-success">+2661</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>DUPONT DE NEMOURS INC</td>
+                    <td>DD</td>
+            <td class="table-success">+29</td><td class="table-success">+4566</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>EASTMAN CHEMICAL CO</td>
+                    <td>EMN</td>
+            <td class="table-success">+20</td><td class="table-success">+3967</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>SANDVIK AB</td>
+                    <td>SAND</td>
+            <td class="table-success">+88</td><td class="table-success">+3456</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>ARKEMA</td>
+                    <td>AKE</td>
+            <td class="table-success">+15</td><td class="table-success">+2799</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>3M CO</td>
+                    <td>MMM</td>
+            <td class="table-success">+10</td><td class="table-success">+3260</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>KONINKLIJKE DSM NV</td>
+                    <td>DSM</td>
+            <td class="table-success">+10</td><td class="table-success">+3356</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>HENKEL AG & CO KGAA VORZUG</td>
+                    <td>HEN3</td>
+            <td class="table-success">+16</td><td class="table-success">+2372</td><td>0.0</td>
+            </tr>
+        
+                </table>
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        </body>
+        </html>
     
-            <tr>
-                <td>3D SYSTEMS CORP</td>
-                <td>DDD</td>
-                <td>654429.0</td>
-                <td>6773340.15</td>
-                <td>6.65</td>
-            </tr>
-    
-            <tr>
-                <td>HP INC</td>
-                <td>HPQ</td>
-                <td>224700.0</td>
-                <td>5284944.0</td>
-                <td>5.19</td>
-            </tr>
-    
-            <tr>
-                <td>STRAUMANN HOLDING AG-REG</td>
-                <td>STMN</td>
-                <td>4092.0</td>
-                <td>4830226.07</td>
-                <td>4.74</td>
-            </tr>
-    
-            <tr>
-                <td>PTC INC</td>
-                <td>PTC</td>
-                <td>42930.0</td>
-                <td>4778109.0</td>
-                <td>4.69</td>
-            </tr>
-    
-            <tr>
-                <td>MGI DIGITAL GRAPHIC TECHNOLO</td>
-                <td>ALMDG</td>
-                <td>79622.0</td>
-                <td>4569273.46</td>
-                <td>4.48</td>
-            </tr>
-    
-            <tr>
-                <td>TRIMBLE INC</td>
-                <td>TRMB</td>
-                <td>72218.0</td>
-                <td>4556955.8</td>
-                <td>4.47</td>
-            </tr>
-    
-            <tr>
-                <td>MATERIALISE NV-ADR</td>
-                <td>MTLS</td>
-                <td>90169.0</td>
-                <td>4540910.84</td>
-                <td>4.46</td>
-            </tr>
-    
-            <tr>
-                <td>ALTAIR ENGINEERING INC - A</td>
-                <td>ALTR</td>
-                <td>82143.0</td>
-                <td>4524436.44</td>
-                <td>4.44</td>
-            </tr>
-    
-            <tr>
-                <td>PROTO LABS INC</td>
-                <td>PRLB</td>
-                <td>30311.0</td>
-                <td>4467235.18</td>
-                <td>4.38</td>
-            </tr>
-    
-            <tr>
-                <td>STRATASYS LTD</td>
-                <td>SSYS</td>
-                <td>252613.0</td>
-                <td>4448514.93</td>
-                <td>4.37</td>
-            </tr>
-    
-            <tr>
-                <td>RENISHAW PLC</td>
-                <td>RSW</td>
-                <td>58822.0</td>
-                <td>4438951.52</td>
-                <td>4.36</td>
-            </tr>
-    
-            <tr>
-                <td>EXONE CO/THE</td>
-                <td>XONE</td>
-                <td>354503.0</td>
-                <td>4314301.51</td>
-                <td>4.23</td>
-            </tr>
-    
-            <tr>
-                <td>AUTODESK INC</td>
-                <td>ADSK</td>
-                <td>14822.0</td>
-                <td>4215080.36</td>
-                <td>4.14</td>
-            </tr>
-    
-            <tr>
-                <td>DASSAULT SYSTEMES SE</td>
-                <td>DSY</td>
-                <td>20412.0</td>
-                <td>3825535.55</td>
-                <td>3.75</td>
-            </tr>
-    
-            <tr>
-                <td>MICROSOFT CORP</td>
-                <td>MSFT</td>
-                <td>17150.0</td>
-                <td>3704571.5</td>
-                <td>3.64</td>
-            </tr>
-    
-            <tr>
-                <td>ANSYS INC</td>
-                <td>ANSS</td>
-                <td>10737.0</td>
-                <td>3664323.36</td>
-                <td>3.6</td>
-            </tr>
-    
-            <tr>
-                <td>ALIGN TECHNOLOGY INC</td>
-                <td>ALGN</td>
-                <td>3250.0</td>
-                <td>1676220.0</td>
-                <td>1.65</td>
-            </tr>
-    
-            <tr>
-                <td>HEXAGON AB-B SHS</td>
-                <td>HEXAB</td>
-                <td>14486.0</td>
-                <td>1222268.28</td>
-                <td>1.2</td>
-            </tr>
-    
-            <tr>
-                <td>GENERAL ELECTRIC CO</td>
-                <td>GE</td>
-                <td>109466.0</td>
-                <td>1199747.36</td>
-                <td>1.18</td>
-            </tr>
-    
-            <tr>
-                <td>AMETEK INC</td>
-                <td>AME</td>
-                <td>10088.0</td>
-                <td>1196134.16</td>
-                <td>1.17</td>
-            </tr>
-    
-            <tr>
-                <td>KAISER ALUMINUM CORP</td>
-                <td>KALU</td>
-                <td>11995.0</td>
-                <td>1149840.7</td>
-                <td>1.13</td>
-            </tr>
-    
-            <tr>
-                <td>FARO TECHNOLOGIES INC</td>
-                <td>FARO</td>
-                <td>17191.0</td>
-                <td>1154547.56</td>
-                <td>1.13</td>
-            </tr>
-    
-            <tr>
-                <td>ULTRA CLEAN HOLDINGS INC</td>
-                <td>UCTT</td>
-                <td>31186.0</td>
-                <td>1133922.96</td>
-                <td>1.11</td>
-            </tr>
-    
-            <tr>
-                <td>ARCONIC CORP</td>
-                <td>ARNC</td>
-                <td>33302.0</td>
-                <td>1018042.14</td>
-                <td>1.0</td>
-            </tr>
-    
-            <tr>
-                <td>BERTRANDT AG</td>
-                <td>BDT</td>
-                <td>20209.0</td>
-                <td>989689.76</td>
-                <td>0.97</td>
-            </tr>
-    
-            <tr>
-                <td>MOOG INC-CLASS A</td>
-                <td>MOG/A</td>
-                <td>11645.0</td>
-                <td>969329.8</td>
-                <td>0.95</td>
-            </tr>
-    
-            <tr>
-                <td>OC OERLIKON CORP AG-REG</td>
-                <td>OERL</td>
-                <td>97627.0</td>
-                <td>949258.15</td>
-                <td>0.93</td>
-            </tr>
-    
-            <tr>
-                <td>LINCOLN ELECTRIC HOLDINGS</td>
-                <td>LECO</td>
-                <td>7602.0</td>
-                <td>908515.02</td>
-                <td>0.89</td>
-            </tr>
-    
-            <tr>
-                <td>MICHELIN (CGDE)</td>
-                <td>ML</td>
-                <td>7099.0</td>
-                <td>901588.56</td>
-                <td>0.88</td>
-            </tr>
-    
-            <tr>
-                <td>SIEMENS AG-REG</td>
-                <td>SIE</td>
-                <td>5879.0</td>
-                <td>814263.96</td>
-                <td>0.8</td>
-            </tr>
-    
-            <tr>
-                <td>AEROJET ROCKETDYNE HOLDINGS</td>
-                <td>AJRD</td>
-                <td>19194.0</td>
-                <td>801925.32</td>
-                <td>0.79</td>
-            </tr>
-    
-            <tr>
-                <td>STRYKER CORP</td>
-                <td>SYK</td>
-                <td>3397.0</td>
-                <td>799823.65</td>
-                <td>0.78</td>
-            </tr>
-    
-            <tr>
-                <td>MEDTRONIC PLC</td>
-                <td>MDT UN</td>
-                <td>7068.0</td>
-                <td>785820.24</td>
-                <td>0.77</td>
-            </tr>
-    
-            <tr>
-                <td>UNITED PARCEL SERVICE-CL B</td>
-                <td>UPS</td>
-                <td>4431.0</td>
-                <td>737274.09</td>
-                <td>0.72</td>
-            </tr>
-    
-            <tr>
-                <td>NUVASIVE INC</td>
-                <td>NUVA</td>
-                <td>14278.0</td>
-                <td>667496.5</td>
-                <td>0.66</td>
-            </tr>
-    
-            <tr>
-                <td>ALLEGHENY TECHNOLOGIES INC</td>
-                <td>ATI</td>
-                <td>12301.0</td>
-                <td>210839.14</td>
-                <td>0.21</td>
-            </tr>
-    
-            <tr>
-                <td>CARPENTER TECHNOLOGY</td>
-                <td>CRS</td>
-                <td>6189.0</td>
-                <td>179419.11</td>
-                <td>0.18</td>
-            </tr>
-    
-            <tr>
-                <td>HEXCEL CORP</td>
-                <td>HXL</td>
-                <td>3153.0</td>
-                <td>169915.17</td>
-                <td>0.17</td>
-            </tr>
-    
-            <tr>
-                <td>SGL CARBON SE</td>
-                <td>SGL</td>
-                <td>33370.0</td>
-                <td>154735.77</td>
-                <td>0.15</td>
-            </tr>
-    
-            <tr>
-                <td>TORAY INDUSTRIES INC</td>
-                <td>3402</td>
-                <td>23608.0</td>
-                <td>138409.31</td>
-                <td>0.14</td>
-            </tr>
-    
-            <tr>
-                <td>XEROX HOLDINGS CORP</td>
-                <td>XRX UN</td>
-                <td>5736.0</td>
-                <td>131124.96</td>
-                <td>0.13</td>
-            </tr>
-    
-            <tr>
-                <td>VOESTALPINE AG</td>
-                <td>VOE</td>
-                <td>4089.0</td>
-                <td>137377.57</td>
-                <td>0.13</td>
-            </tr>
-    
-            <tr>
-                <td>EVONIK INDUSTRIES AG</td>
-                <td>EVK</td>
-                <td>4249.0</td>
-                <td>134779.47</td>
-                <td>0.13</td>
-            </tr>
-    
-            <tr>
-                <td>DUPONT DE NEMOURS INC</td>
-                <td>DD</td>
-                <td>1934.0</td>
-                <td>129210.54</td>
-                <td>0.13</td>
-            </tr>
-    
-            <tr>
-                <td>EASTMAN CHEMICAL CO</td>
-                <td>EMN</td>
-                <td>1333.0</td>
-                <td>137525.61</td>
-                <td>0.13</td>
-            </tr>
-    
-            <tr>
-                <td>SANDVIK AB</td>
-                <td>SAND</td>
-                <td>5906.0</td>
-                <td>135703.59</td>
-                <td>0.13</td>
-            </tr>
-    
-            <tr>
-                <td>ARKEMA</td>
-                <td>AKE</td>
-                <td>1039.0</td>
-                <td>118294.32</td>
-                <td>0.12</td>
-            </tr>
-    
-            <tr>
-                <td>3M CO</td>
-                <td>MMM</td>
-                <td>675.0</td>
-                <td>116410.5</td>
-                <td>0.11</td>
-            </tr>
-    
-            <tr>
-                <td>KONINKLIJKE DSM NV</td>
-                <td>DSM</td>
-                <td>673.0</td>
-                <td>111260.88</td>
-                <td>0.11</td>
-            </tr>
-    
-            <tr>
-                <td>HENKEL AG & CO KGAA VORZUG</td>
-                <td>HEN3</td>
-                <td>1074.0</td>
-                <td>116115.84</td>
-                <td>0.11</td>
-            </tr>
-    
-        </table>
-    </body>
-    </html>

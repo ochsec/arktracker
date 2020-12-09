@@ -2,460 +2,792 @@
     <!DOCTYPE html>
     <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Arktracker.info</title>
-        <link rel="stylesheet" href="./css/styles.css" type="text/css" media="all">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Arktracker.info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     <body>
-        <h1>Arktracker.info</h1>
-        <table>
-            <tr>
-                <th>Funds</th>
-                <th>
-                    <a href="./arkk.html">ARKK</a>
-                </th>
-                <th>
-                    <a href="./arkf.html">ARKF</a>
-                </th>
-                <th>
-                    <a href="./arkg.html">ARKG</a>
-                </th>
-                <th>
-                    <a href="./arkq.html">ARKQ</a>
-                </th>
-                <th>
-                    <a href="./arkw.html">ARKW</a>
-                </th>
-                <th>
-                    <a href="./izrl.html">IZRL</a>
-                </th>
-                <th>
-                    <a href="./prnt.html">PRNT</a>
-                </th>
-            </tr>
-        </table>
-        <hr>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Arktracker.info</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link" href="#">ETFs:</a>
+            <a class="nav-link" aria-current="page" active href="./arkk.html">ARKK</a>
+            <a class="nav-link" href="./arkf.html">ARKF</a>
+            <a class="nav-link" href="./arkg.html">ARKG</a>
+            <a class="nav-link" href="./arkq.html">ARKQ</a>
+            <a class="nav-link" href="./arkw.html">ARKW</a>
+            <a class="nav-link" href="./izrl.html">IZRL</a>
+            <a class="nav-link" href="./prnt.html">PRNT</a>
+            </div>
+        </div>    
+        </div>
+    </nav>
     
-        <h2>ARKW / ARK Next Generation Internet ETF</h2>
-        <h3>Holdings</h3>
-        <table>
-            <tr>
-                <th>Company</th>
-                <th>Ticker</th>
-                <th>Shares</th>
-                <th>Market Value ($)</th>
-                <th>Weight %</th>
+            <div class="container-fluid">
+                <div class="row pt-3">
+                <h2>ARKW / ARK Next Generation Internet ETF</h2>
+                </div>
+                <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="holdings-tab" data-bs-toggle="tab" href="#holdings" role="tab" aria-controls="holdings" aria-selected="true">Holdings</a>
+                    <a class="nav-link" id="day-1-tab" data-bs-toggle="tab" href="#day-1" role="tab" aria-controls="day-1" aria-selected="false">1 Day &Delta;s</a>
+                    <!-- <a class="nav-link" id="day7-tab" data-bs-toggle="tab" href="#day7" role="tab" aria-controls="day7" aria-selected="false">7 Day &Delta;s</a> -->        
+                </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="holdings" role="tabpanel" aria-labelledby="holdings">
+                        <div class="row pt-3">
+                            <h3>Holdings as of 12/8/2020</h3>
+                        </div>
+                        <table class="table table-hover">
+                        <tr>
+                            <th>Company</th>
+                            <th>Ticker</th>
+                            <th>Shares</th>
+                            <th>Market Value ($)</th>
+                            <th>Weight %</th>
+                        </tr>
+            
+                <tr>
+                    <td>TESLA INC</td>
+                    <td>TSLA</td>
+                    <td>744972.0</td>
+                    <td>484142403.36</td>
+                    <td>10.3</td>
+                </tr>
+        
+                <tr>
+                    <td>ROKU INC</td>
+                    <td>ROKU</td>
+                    <td>1174011.0</td>
+                    <td>359399987.43</td>
+                    <td>7.65</td>
+                </tr>
+        
+                <tr>
+                    <td>SQUARE INC - A</td>
+                    <td>SQ</td>
+                    <td>1122567.0</td>
+                    <td>239117996.67</td>
+                    <td>5.09</td>
+                </tr>
+        
+                <tr>
+                    <td>SPOTIFY TECHNOLOGY SA</td>
+                    <td>SPOT</td>
+                    <td>518801.0</td>
+                    <td>172688100.86</td>
+                    <td>3.68</td>
+                </tr>
+        
+                <tr>
+                    <td>TELADOC HEALTH INC</td>
+                    <td>TDOC</td>
+                    <td>785742.0</td>
+                    <td>155781208.92</td>
+                    <td>3.32</td>
+                </tr>
+        
+                <tr>
+                    <td>PURE STORAGE INC - CLASS A</td>
+                    <td>PSTG</td>
+                    <td>6352832.0</td>
+                    <td>136331774.72</td>
+                    <td>2.9</td>
+                </tr>
+        
+                <tr>
+                    <td>FACEBOOK INC-CLASS A</td>
+                    <td>FB</td>
+                    <td>438314.0</td>
+                    <td>124218187.6</td>
+                    <td>2.64</td>
+                </tr>
+        
+                <tr>
+                    <td>PINTEREST INC- CLASS A</td>
+                    <td>PINS</td>
+                    <td>1710219.0</td>
+                    <td>119578512.48</td>
+                    <td>2.55</td>
+                </tr>
+        
+                <tr>
+                    <td>GRAYSCALE BITCOIN TRUST BTC</td>
+                    <td>GBTC</td>
+                    <td>5585275.0</td>
+                    <td>117067364.0</td>
+                    <td>2.49</td>
+                </tr>
+        
+                <tr>
+                    <td>PAGERDUTY INC</td>
+                    <td>PD</td>
+                    <td>2802689.0</td>
+                    <td>114966302.78</td>
+                    <td>2.45</td>
+                </tr>
+        
+                <tr>
+                    <td>TWILIO INC - A</td>
+                    <td>TWLO</td>
+                    <td>341206.0</td>
+                    <td>109458884.8</td>
+                    <td>2.33</td>
+                </tr>
+        
+                <tr>
+                    <td>SNAP INC - A</td>
+                    <td>SNAP</td>
+                    <td>2151695.0</td>
+                    <td>107584750.0</td>
+                    <td>2.29</td>
+                </tr>
+        
+                <tr>
+                    <td>SEA LTD-ADR</td>
+                    <td>SE</td>
+                    <td>508417.0</td>
+                    <td>104667807.79</td>
+                    <td>2.23</td>
+                </tr>
+        
+                <tr>
+                    <td>FASTLY INC - CLASS A</td>
+                    <td>FSLY</td>
+                    <td>1037423.0</td>
+                    <td>101646705.54</td>
+                    <td>2.16</td>
+                </tr>
+        
+                <tr>
+                    <td>UNITY SOFTWARE INC</td>
+                    <td>U</td>
+                    <td>604297.0</td>
+                    <td>101068673.25</td>
+                    <td>2.15</td>
+                </tr>
+        
+                <tr>
+                    <td>VERACYTE INC</td>
+                    <td>VCYT</td>
+                    <td>1670364.0</td>
+                    <td>100773060.12</td>
+                    <td>2.14</td>
+                </tr>
+        
+                <tr>
+                    <td>TENCENT HOLDINGS LTD-UNS ADR</td>
+                    <td>TCEHY</td>
+                    <td>1304181.0</td>
+                    <td>98896045.23</td>
+                    <td>2.11</td>
+                </tr>
+        
+                <tr>
+                    <td>PAYPAL HOLDINGS INC</td>
+                    <td>PYPL</td>
+                    <td>444403.0</td>
+                    <td>96408786.82</td>
+                    <td>2.05</td>
+                </tr>
+        
+                <tr>
+                    <td>NETFLIX INC</td>
+                    <td>NFLX</td>
+                    <td>186348.0</td>
+                    <td>95533165.68</td>
+                    <td>2.03</td>
+                </tr>
+        
+                <tr>
+                    <td>LENDINGTREE INC</td>
+                    <td>TREE UW</td>
+                    <td>346527.0</td>
+                    <td>92883097.08</td>
+                    <td>1.98</td>
+                </tr>
+        
+                <tr>
+                    <td>INTERCONTINENTAL EXCHANGE IN</td>
+                    <td>ICE</td>
+                    <td>796806.0</td>
+                    <td>87696468.36</td>
+                    <td>1.87</td>
+                </tr>
+        
+                <tr>
+                    <td>ZILLOW GROUP INC - C</td>
+                    <td>Z</td>
+                    <td>713370.0</td>
+                    <td>81823539.0</td>
+                    <td>1.74</td>
+                </tr>
+        
+                <tr>
+                    <td>HUYA INC-ADR</td>
+                    <td>HUYA</td>
+                    <td>3971430.0</td>
+                    <td>77601742.2</td>
+                    <td>1.65</td>
+                </tr>
+        
+                <tr>
+                    <td>KE HOLDINGS INC</td>
+                    <td>BEKE</td>
+                    <td>1163192.0</td>
+                    <td>76270499.44</td>
+                    <td>1.62</td>
+                </tr>
+        
+                <tr>
+                    <td>DOCUSIGN INC</td>
+                    <td>DOCU</td>
+                    <td>311801.0</td>
+                    <td>73217110.82</td>
+                    <td>1.56</td>
+                </tr>
+        
+                <tr>
+                    <td>SHOPIFY INC - CLASS A</td>
+                    <td>SHOP</td>
+                    <td>64092.0</td>
+                    <td>70635152.28</td>
+                    <td>1.5</td>
+                </tr>
+        
+                <tr>
+                    <td>SOCIAL CAPITAL HEDOSOPHIA-A</td>
+                    <td>IPOB</td>
+                    <td>2723906.0</td>
+                    <td>68506235.9</td>
+                    <td>1.46</td>
+                </tr>
+        
+                <tr>
+                    <td>MERCADOLIBRE INC</td>
+                    <td>MELI</td>
+                    <td>40826.0</td>
+                    <td>65969916.88</td>
+                    <td>1.4</td>
+                </tr>
+        
+                <tr>
+                    <td>2U INC</td>
+                    <td>TWOU</td>
+                    <td>1911052.0</td>
+                    <td>62395847.8</td>
+                    <td>1.33</td>
+                </tr>
+        
+                <tr>
+                    <td>CROWDSTRIKE HOLDINGS INC - A</td>
+                    <td>CRWD</td>
+                    <td>345661.0</td>
+                    <td>61347914.28</td>
+                    <td>1.31</td>
+                </tr>
+        
+                <tr>
+                    <td>AGORA INC-ADR</td>
+                    <td>API</td>
+                    <td>1430315.0</td>
+                    <td>61002934.75</td>
+                    <td>1.3</td>
+                </tr>
+        
+                <tr>
+                    <td>NINTENDO CO LTD-UNSPONS ADR</td>
+                    <td>NTDOY</td>
+                    <td>788588.0</td>
+                    <td>55729513.96</td>
+                    <td>1.19</td>
+                </tr>
+        
+                <tr>
+                    <td>TRADE DESK INC/THE -CLASS A</td>
+                    <td>TTD</td>
+                    <td>61310.0</td>
+                    <td>56098650.0</td>
+                    <td>1.19</td>
+                </tr>
+        
+                <tr>
+                    <td>CLOUDFLARE INC - CLASS A</td>
+                    <td>NET</td>
+                    <td>660488.0</td>
+                    <td>55183772.4</td>
+                    <td>1.17</td>
+                </tr>
+        
+                <tr>
+                    <td>TAIWAN SEMICONDUCTOR-SP ADR</td>
+                    <td>TSM</td>
+                    <td>496240.0</td>
+                    <td>52422793.6</td>
+                    <td>1.12</td>
+                </tr>
+        
+                <tr>
+                    <td>HUBSPOT INC</td>
+                    <td>HUBS</td>
+                    <td>130514.0</td>
+                    <td>50230923.18</td>
+                    <td>1.07</td>
+                </tr>
+        
+                <tr>
+                    <td>JD.COM INC-ADR</td>
+                    <td>JD</td>
+                    <td>604275.0</td>
+                    <td>49556592.75</td>
+                    <td>1.05</td>
+                </tr>
+        
+                <tr>
+                    <td>PELOTON INTERACTIVE INC-A</td>
+                    <td>PTON</td>
+                    <td>401943.0</td>
+                    <td>47529759.75</td>
+                    <td>1.01</td>
+                </tr>
+        
+                <tr>
+                    <td>SPLUNK INC</td>
+                    <td>SPLK</td>
+                    <td>291482.0</td>
+                    <td>46919857.54</td>
+                    <td>1.0</td>
+                </tr>
+        
+                <tr>
+                    <td>SALESFORCE.COM INC</td>
+                    <td>CRM</td>
+                    <td>203462.0</td>
+                    <td>46360851.32</td>
+                    <td>0.99</td>
+                </tr>
+        
+                <tr>
+                    <td>ATLASSIAN CORP PLC-CLASS A</td>
+                    <td>TEAM</td>
+                    <td>199816.0</td>
+                    <td>45925709.44</td>
+                    <td>0.98</td>
+                </tr>
+        
+                <tr>
+                    <td>ZOOM VIDEO COMMUNICATIONS-A</td>
+                    <td>ZM</td>
+                    <td>110863.0</td>
+                    <td>45675556.0</td>
+                    <td>0.97</td>
+                </tr>
+        
+                <tr>
+                    <td>LENDINGCLUB CORP</td>
+                    <td>LC</td>
+                    <td>4673794.0</td>
+                    <td>43793449.78</td>
+                    <td>0.93</td>
+                </tr>
+        
+                <tr>
+                    <td>ADYEN NV-UNSPON ADR</td>
+                    <td>ADYEY</td>
+                    <td>1027465.0</td>
+                    <td>43297375.1</td>
+                    <td>0.92</td>
+                </tr>
+        
+                <tr>
+                    <td>OKTA INC</td>
+                    <td>OKTA</td>
+                    <td>166593.0</td>
+                    <td>41836500.09</td>
+                    <td>0.89</td>
+                </tr>
+        
+                <tr>
+                    <td>ALIBABA GROUP HOLDING-SP ADR</td>
+                    <td>BABA</td>
+                    <td>148936.0</td>
+                    <td>39630380.24</td>
+                    <td>0.84</td>
+                </tr>
+        
+                <tr>
+                    <td>SYNOPSYS INC</td>
+                    <td>SNPS</td>
+                    <td>165891.0</td>
+                    <td>39608135.16</td>
+                    <td>0.84</td>
+                </tr>
+        
+                <tr>
+                    <td>NVIDIA CORP</td>
+                    <td>NVDA</td>
+                    <td>71597.0</td>
+                    <td>38232798.0</td>
+                    <td>0.81</td>
+                </tr>
+        
+                <tr>
+                    <td>ADOBE INC</td>
+                    <td>ADBE</td>
+                    <td>73996.0</td>
+                    <td>36648738.88</td>
+                    <td>0.78</td>
+                </tr>
+        
+                <tr>
+                    <td>PALANTIR TECHNOLOGIES INC-A</td>
+                    <td>PLTR</td>
+                    <td>1200034.0</td>
+                    <td>34308972.06</td>
+                    <td>0.73</td>
+                </tr>
+        
+                <tr>
+                    <td>SLACK TECHNOLOGIES INC- CL A</td>
+                    <td>WORK</td>
+                    <td>28301.0</td>
+                    <td>1217792.03</td>
+                    <td>0.03</td>
+                </tr>
+        
+            </table>
+            <a href="https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv">Data Source</a>
+            </div>
+        
+            <div class="tab-pane fade" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
+                <div class="container-fluid">
+                    <div class="row pt-3">
+                        <h3>1 Day Changes 12/7/2020 - 12/8/2020</h3>
+                    <table class="table table-hover">
+                        <tr>
+                            <th>Company</th>
+                            <th>Ticker</th>
+                            <th>&Delta; Shares</th>
+                            <th>&Delta; Market Value ($)</th>
+                            <th>&Delta; Weight %</th>
+                        </tr>
+        
+                <tr>
+                    <td>TESLA INC</td>
+                    <td>TSLA</td>
+            <td class="table-success">+14768</td><td class="table-success">+15526684</td><td class="table-success">+0.04</td>
             </tr>
-
-            <tr>
-                <td>TESLA INC</td>
-                <td>TSLA</td>
-                <td>744972.0</td>
-                <td>484142403.36</td>
-                <td>10.3</td>
+        
+                <tr>
+                    <td>ROKU INC</td>
+                    <td>ROKU</td>
+            <td class="table-success">+23270</td><td class="table-success">+14200702</td><td class="table-success">+0.09</td>
             </tr>
+        
+                <tr>
+                    <td>SQUARE INC - A</td>
+                    <td>SQ</td>
+            <td class="table-success">+22243</td><td class="table-success">+5211120</td><td class="table-danger">-0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>SPOTIFY TECHNOLOGY SA</td>
+                    <td>SPOT</td>
+            <td class="table-success">+10283</td><td class="table-danger">-1225055</td><td class="table-danger">-0.13</td>
+            </tr>
+        
+                <tr>
+                    <td>TELADOC HEALTH INC</td>
+                    <td>TDOC</td>
+            <td class="table-success">+15574</td><td class="table-success">+3827062</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>PURE STORAGE INC - CLASS A</td>
+                    <td>PSTG</td>
+            <td class="table-success">+125892</td><td class="table-success">+3511144</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>FACEBOOK INC-CLASS A</td>
+                    <td>FB</td>
+            <td class="table-success">+8684</td><td class="table-success">+1524452</td><td class="table-danger">-0.05</td>
+            </tr>
+        
+                <tr>
+                    <td>PINTEREST INC- CLASS A</td>
+                    <td>PINS</td>
+            <td class="table-success">+33891</td><td class="table-success">+1715890</td><td class="table-danger">-0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>GRAYSCALE BITCOIN TRUST BTC</td>
+                    <td>GBTC</td>
+            <td class="table-success">+110682</td><td class="table-danger">-5891994</td><td class="table-danger">-0.2</td>
+            </tr>
+        
+                <tr>
+                    <td>PAGERDUTY INC</td>
+                    <td>PD</td>
+            <td>0</td><td class="table-success">+476457</td><td class="table-danger">-0.06</td>
+            </tr>
+        
+                <tr>
+                    <td>TWILIO INC - A</td>
+                    <td>TWLO</td>
+            <td class="table-success">+6760</td><td class="table-success">+6018081</td><td class="table-success">+0.07</td>
+            </tr>
+        
+                <tr>
+                    <td>SNAP INC - A</td>
+                    <td>SNAP</td>
+            <td class="table-success">+42640</td><td class="table-success">+3291980</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>SEA LTD-ADR</td>
+                    <td>SE</td>
+            <td class="table-success">+10075</td><td class="table-success">+5712036</td><td class="table-success">+0.06</td>
+            </tr>
+        
+                <tr>
+                    <td>FASTLY INC - CLASS A</td>
+                    <td>FSLY</td>
+            <td class="table-success">+20553</td><td class="table-success">+14775501</td><td class="table-success">+0.26</td>
+            </tr>
+        
+                <tr>
+                    <td>UNITY SOFTWARE INC</td>
+                    <td>U</td>
+            <td class="table-success">+11973</td><td class="table-success">+8837903</td><td class="table-success">+0.13</td>
+            </tr>
+        
+                <tr>
+                    <td>VERACYTE INC</td>
+                    <td>VCYT</td>
+            <td>0</td><td class="table-danger">-2589064</td><td class="table-danger">-0.12</td>
+            </tr>
+        
+                <tr>
+                    <td>TENCENT HOLDINGS LTD-UNS ADR</td>
+                    <td>TCEHY</td>
+            <td class="table-success">+25844</td><td class="table-success">+1966142</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>PAYPAL HOLDINGS INC</td>
+                    <td>PYPL</td>
+            <td class="table-success">+8814</td><td class="table-success">+1480876</td><td class="table-danger">-0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>NETFLIX INC</td>
+                    <td>NFLX</td>
+            <td class="table-success">+3692</td><td class="table-success">+1322854</td><td class="table-danger">-0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>LENDINGTREE INC</td>
+                    <td>TREE UW</td>
+            <td class="table-success">+6864</td><td class="table-success">+5284009</td><td class="table-success">+0.06</td>
+            </tr>
+        
+                <tr>
+                    <td>INTERCONTINENTAL EXCHANGE IN</td>
+                    <td>ICE</td>
+            <td class="table-success">+15795</td><td class="table-success">+1566575</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>ZILLOW GROUP INC - C</td>
+                    <td>Z</td>
+            <td class="table-success">+14144</td><td class="table-success">+3566165</td><td class="table-success">+0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>HUYA INC-ADR</td>
+                    <td>HUYA</td>
+            <td class="table-success">+78702</td><td class="table-success">+3678837</td><td class="table-success">+0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>KE HOLDINGS INC</td>
+                    <td>BEKE</td>
+            <td class="table-success">+23049</td><td class="table-success">+5365006</td><td class="table-success">+0.07</td>
+            </tr>
+        
+                <tr>
+                    <td>DOCUSIGN INC</td>
+                    <td>DOCU</td>
+            <td class="table-success">+6175</td><td class="table-success">+2152953</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>SHOPIFY INC - CLASS A</td>
+                    <td>SHOP</td>
+            <td class="table-success">+1274</td><td class="table-success">+2515313</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>SOCIAL CAPITAL HEDOSOPHIA-A</td>
+                    <td>IPOB</td>
+            <td class="table-success">+53976</td><td class="table-success">+182727</td><td class="table-danger">-0.04</td>
+            </tr>
+        
+                <tr>
+                    <td>MERCADOLIBRE INC</td>
+                    <td>MELI</td>
+            <td class="table-success">+806</td><td class="table-success">+2914404</td><td class="table-success">+0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>2U INC</td>
+                    <td>TWOU</td>
+            <td>0</td><td class="table-success">+401320</td><td class="table-danger">-0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>CROWDSTRIKE HOLDINGS INC - A</td>
+                    <td>CRWD</td>
+            <td class="table-success">+6851</td><td class="table-success">+3506271</td><td class="table-success">+0.04</td>
+            </tr>
+        
+                <tr>
+                    <td>AGORA INC-ADR</td>
+                    <td>API</td>
+            <td class="table-success">+28340</td><td class="table-success">+5666981</td><td class="table-success">+0.09</td>
+            </tr>
+        
+                <tr>
+                    <td>NINTENDO CO LTD-UNSPONS ADR</td>
+                    <td>NTDOY</td>
+            <td class="table-success">+15626</td><td class="table-success">+2232813</td><td class="table-success">+0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>TRADE DESK INC/THE -CLASS A</td>
+                    <td>TTD</td>
+            <td class="table-success">+1209</td><td class="table-success">+1248674</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>CLOUDFLARE INC - CLASS A</td>
+                    <td>NET</td>
+            <td class="table-success">+13091</td><td class="table-success">+2123114</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>TAIWAN SEMICONDUCTOR-SP ADR</td>
+                    <td>TSM</td>
+            <td class="table-success">+9841</td><td class="table-success">+674803</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>HUBSPOT INC</td>
+                    <td>HUBS</td>
+            <td class="table-success">+2587</td><td class="table-success">+957280</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>JD.COM INC-ADR</td>
+                    <td>JD</td>
+            <td class="table-success">+11973</td><td class="table-success">+105298</td><td class="table-danger">-0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>PELOTON INTERACTIVE INC-A</td>
+                    <td>PTON</td>
+            <td class="table-success">+266043</td><td class="table-success">+31679742</td><td class="table-success">+0.66</td>
+            </tr>
+        
+                <tr>
+                    <td>SPLUNK INC</td>
+                    <td>SPLK</td>
+            <td class="table-success">+5772</td><td class="table-success">+2457667</td><td class="table-success">+0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>SALESFORCE.COM INC</td>
+                    <td>CRM</td>
+            <td class="table-success">+101962</td><td class="table-success">+23249301</td><td class="table-success">+0.48</td>
+            </tr>
+        
+                <tr>
+                    <td>ATLASSIAN CORP PLC-CLASS A</td>
+                    <td>TEAM</td>
+            <td class="table-success">+3965</td><td class="table-success">+1318685</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>ZOOM VIDEO COMMUNICATIONS-A</td>
+                    <td>ZM</td>
+            <td class="table-success">+2197</td><td class="table-success">+1356127</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>LENDINGCLUB CORP</td>
+                    <td>LC</td>
+            <td>0</td><td class="table-danger">-1355400</td><td class="table-danger">-0.06</td>
+            </tr>
+        
+                <tr>
+                    <td>ADYEN NV-UNSPON ADR</td>
+                    <td>ADYEY</td>
+            <td class="table-success">+20358</td><td class="table-success">+1905277</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>OKTA INC</td>
+                    <td>OKTA</td>
+            <td class="table-success">+3302</td><td class="table-success">+1658749</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>ALIBABA GROUP HOLDING-SP ADR</td>
+                    <td>BABA</td>
+            <td class="table-success">+2951</td><td class="table-success">+1090340</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>SYNOPSYS INC</td>
+                    <td>SNPS</td>
+            <td class="table-success">+3289</td><td class="table-success">+718614</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>NVIDIA CORP</td>
+                    <td>NVDA</td>
+            <td class="table-success">+1417</td><td class="table-success">+35929</td><td class="table-danger">-0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>ADOBE INC</td>
+                    <td>ADBE</td>
+            <td class="table-success">+1469</td><td class="table-success">+947323</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>PALANTIR TECHNOLOGIES INC-A</td>
+                    <td>PLTR</td>
+            <td class="table-success">+23777</td><td class="table-success">+268094</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>SLACK TECHNOLOGIES INC- CL A</td>
+                    <td>WORK</td>
+            <td class="table-danger">-1371353</td><td class="table-danger">-58519440</td><td class="table-danger">-1.28</td>
+            </tr>
+        
+                </table>
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        </body>
+        </html>
     
-            <tr>
-                <td>ROKU INC</td>
-                <td>ROKU</td>
-                <td>1174011.0</td>
-                <td>359399987.43</td>
-                <td>7.65</td>
-            </tr>
-    
-            <tr>
-                <td>SQUARE INC - A</td>
-                <td>SQ</td>
-                <td>1122567.0</td>
-                <td>239117996.67</td>
-                <td>5.09</td>
-            </tr>
-    
-            <tr>
-                <td>SPOTIFY TECHNOLOGY SA</td>
-                <td>SPOT</td>
-                <td>518801.0</td>
-                <td>172688100.86</td>
-                <td>3.68</td>
-            </tr>
-    
-            <tr>
-                <td>TELADOC HEALTH INC</td>
-                <td>TDOC</td>
-                <td>785742.0</td>
-                <td>155781208.92</td>
-                <td>3.32</td>
-            </tr>
-    
-            <tr>
-                <td>PURE STORAGE INC - CLASS A</td>
-                <td>PSTG</td>
-                <td>6352832.0</td>
-                <td>136331774.72</td>
-                <td>2.9</td>
-            </tr>
-    
-            <tr>
-                <td>FACEBOOK INC-CLASS A</td>
-                <td>FB</td>
-                <td>438314.0</td>
-                <td>124218187.6</td>
-                <td>2.64</td>
-            </tr>
-    
-            <tr>
-                <td>PINTEREST INC- CLASS A</td>
-                <td>PINS</td>
-                <td>1710219.0</td>
-                <td>119578512.48</td>
-                <td>2.55</td>
-            </tr>
-    
-            <tr>
-                <td>GRAYSCALE BITCOIN TRUST BTC</td>
-                <td>GBTC</td>
-                <td>5585275.0</td>
-                <td>117067364.0</td>
-                <td>2.49</td>
-            </tr>
-    
-            <tr>
-                <td>PAGERDUTY INC</td>
-                <td>PD</td>
-                <td>2802689.0</td>
-                <td>114966302.78</td>
-                <td>2.45</td>
-            </tr>
-    
-            <tr>
-                <td>TWILIO INC - A</td>
-                <td>TWLO</td>
-                <td>341206.0</td>
-                <td>109458884.8</td>
-                <td>2.33</td>
-            </tr>
-    
-            <tr>
-                <td>SNAP INC - A</td>
-                <td>SNAP</td>
-                <td>2151695.0</td>
-                <td>107584750.0</td>
-                <td>2.29</td>
-            </tr>
-    
-            <tr>
-                <td>SEA LTD-ADR</td>
-                <td>SE</td>
-                <td>508417.0</td>
-                <td>104667807.79</td>
-                <td>2.23</td>
-            </tr>
-    
-            <tr>
-                <td>FASTLY INC - CLASS A</td>
-                <td>FSLY</td>
-                <td>1037423.0</td>
-                <td>101646705.54</td>
-                <td>2.16</td>
-            </tr>
-    
-            <tr>
-                <td>UNITY SOFTWARE INC</td>
-                <td>U</td>
-                <td>604297.0</td>
-                <td>101068673.25</td>
-                <td>2.15</td>
-            </tr>
-    
-            <tr>
-                <td>VERACYTE INC</td>
-                <td>VCYT</td>
-                <td>1670364.0</td>
-                <td>100773060.12</td>
-                <td>2.14</td>
-            </tr>
-    
-            <tr>
-                <td>TENCENT HOLDINGS LTD-UNS ADR</td>
-                <td>TCEHY</td>
-                <td>1304181.0</td>
-                <td>98896045.23</td>
-                <td>2.11</td>
-            </tr>
-    
-            <tr>
-                <td>PAYPAL HOLDINGS INC</td>
-                <td>PYPL</td>
-                <td>444403.0</td>
-                <td>96408786.82</td>
-                <td>2.05</td>
-            </tr>
-    
-            <tr>
-                <td>NETFLIX INC</td>
-                <td>NFLX</td>
-                <td>186348.0</td>
-                <td>95533165.68</td>
-                <td>2.03</td>
-            </tr>
-    
-            <tr>
-                <td>LENDINGTREE INC</td>
-                <td>TREE UW</td>
-                <td>346527.0</td>
-                <td>92883097.08</td>
-                <td>1.98</td>
-            </tr>
-    
-            <tr>
-                <td>INTERCONTINENTAL EXCHANGE IN</td>
-                <td>ICE</td>
-                <td>796806.0</td>
-                <td>87696468.36</td>
-                <td>1.87</td>
-            </tr>
-    
-            <tr>
-                <td>ZILLOW GROUP INC - C</td>
-                <td>Z</td>
-                <td>713370.0</td>
-                <td>81823539.0</td>
-                <td>1.74</td>
-            </tr>
-    
-            <tr>
-                <td>HUYA INC-ADR</td>
-                <td>HUYA</td>
-                <td>3971430.0</td>
-                <td>77601742.2</td>
-                <td>1.65</td>
-            </tr>
-    
-            <tr>
-                <td>KE HOLDINGS INC</td>
-                <td>BEKE</td>
-                <td>1163192.0</td>
-                <td>76270499.44</td>
-                <td>1.62</td>
-            </tr>
-    
-            <tr>
-                <td>DOCUSIGN INC</td>
-                <td>DOCU</td>
-                <td>311801.0</td>
-                <td>73217110.82</td>
-                <td>1.56</td>
-            </tr>
-    
-            <tr>
-                <td>SHOPIFY INC - CLASS A</td>
-                <td>SHOP</td>
-                <td>64092.0</td>
-                <td>70635152.28</td>
-                <td>1.5</td>
-            </tr>
-    
-            <tr>
-                <td>SOCIAL CAPITAL HEDOSOPHIA-A</td>
-                <td>IPOB</td>
-                <td>2723906.0</td>
-                <td>68506235.9</td>
-                <td>1.46</td>
-            </tr>
-    
-            <tr>
-                <td>MERCADOLIBRE INC</td>
-                <td>MELI</td>
-                <td>40826.0</td>
-                <td>65969916.88</td>
-                <td>1.4</td>
-            </tr>
-    
-            <tr>
-                <td>2U INC</td>
-                <td>TWOU</td>
-                <td>1911052.0</td>
-                <td>62395847.8</td>
-                <td>1.33</td>
-            </tr>
-    
-            <tr>
-                <td>CROWDSTRIKE HOLDINGS INC - A</td>
-                <td>CRWD</td>
-                <td>345661.0</td>
-                <td>61347914.28</td>
-                <td>1.31</td>
-            </tr>
-    
-            <tr>
-                <td>AGORA INC-ADR</td>
-                <td>API</td>
-                <td>1430315.0</td>
-                <td>61002934.75</td>
-                <td>1.3</td>
-            </tr>
-    
-            <tr>
-                <td>NINTENDO CO LTD-UNSPONS ADR</td>
-                <td>NTDOY</td>
-                <td>788588.0</td>
-                <td>55729513.96</td>
-                <td>1.19</td>
-            </tr>
-    
-            <tr>
-                <td>TRADE DESK INC/THE -CLASS A</td>
-                <td>TTD</td>
-                <td>61310.0</td>
-                <td>56098650.0</td>
-                <td>1.19</td>
-            </tr>
-    
-            <tr>
-                <td>CLOUDFLARE INC - CLASS A</td>
-                <td>NET</td>
-                <td>660488.0</td>
-                <td>55183772.4</td>
-                <td>1.17</td>
-            </tr>
-    
-            <tr>
-                <td>TAIWAN SEMICONDUCTOR-SP ADR</td>
-                <td>TSM</td>
-                <td>496240.0</td>
-                <td>52422793.6</td>
-                <td>1.12</td>
-            </tr>
-    
-            <tr>
-                <td>HUBSPOT INC</td>
-                <td>HUBS</td>
-                <td>130514.0</td>
-                <td>50230923.18</td>
-                <td>1.07</td>
-            </tr>
-    
-            <tr>
-                <td>JD.COM INC-ADR</td>
-                <td>JD</td>
-                <td>604275.0</td>
-                <td>49556592.75</td>
-                <td>1.05</td>
-            </tr>
-    
-            <tr>
-                <td>PELOTON INTERACTIVE INC-A</td>
-                <td>PTON</td>
-                <td>401943.0</td>
-                <td>47529759.75</td>
-                <td>1.01</td>
-            </tr>
-    
-            <tr>
-                <td>SPLUNK INC</td>
-                <td>SPLK</td>
-                <td>291482.0</td>
-                <td>46919857.54</td>
-                <td>1.0</td>
-            </tr>
-    
-            <tr>
-                <td>SALESFORCE.COM INC</td>
-                <td>CRM</td>
-                <td>203462.0</td>
-                <td>46360851.32</td>
-                <td>0.99</td>
-            </tr>
-    
-            <tr>
-                <td>ATLASSIAN CORP PLC-CLASS A</td>
-                <td>TEAM</td>
-                <td>199816.0</td>
-                <td>45925709.44</td>
-                <td>0.98</td>
-            </tr>
-    
-            <tr>
-                <td>ZOOM VIDEO COMMUNICATIONS-A</td>
-                <td>ZM</td>
-                <td>110863.0</td>
-                <td>45675556.0</td>
-                <td>0.97</td>
-            </tr>
-    
-            <tr>
-                <td>LENDINGCLUB CORP</td>
-                <td>LC</td>
-                <td>4673794.0</td>
-                <td>43793449.78</td>
-                <td>0.93</td>
-            </tr>
-    
-            <tr>
-                <td>ADYEN NV-UNSPON ADR</td>
-                <td>ADYEY</td>
-                <td>1027465.0</td>
-                <td>43297375.1</td>
-                <td>0.92</td>
-            </tr>
-    
-            <tr>
-                <td>OKTA INC</td>
-                <td>OKTA</td>
-                <td>166593.0</td>
-                <td>41836500.09</td>
-                <td>0.89</td>
-            </tr>
-    
-            <tr>
-                <td>ALIBABA GROUP HOLDING-SP ADR</td>
-                <td>BABA</td>
-                <td>148936.0</td>
-                <td>39630380.24</td>
-                <td>0.84</td>
-            </tr>
-    
-            <tr>
-                <td>SYNOPSYS INC</td>
-                <td>SNPS</td>
-                <td>165891.0</td>
-                <td>39608135.16</td>
-                <td>0.84</td>
-            </tr>
-    
-            <tr>
-                <td>NVIDIA CORP</td>
-                <td>NVDA</td>
-                <td>71597.0</td>
-                <td>38232798.0</td>
-                <td>0.81</td>
-            </tr>
-    
-            <tr>
-                <td>ADOBE INC</td>
-                <td>ADBE</td>
-                <td>73996.0</td>
-                <td>36648738.88</td>
-                <td>0.78</td>
-            </tr>
-    
-            <tr>
-                <td>PALANTIR TECHNOLOGIES INC-A</td>
-                <td>PLTR</td>
-                <td>1200034.0</td>
-                <td>34308972.06</td>
-                <td>0.73</td>
-            </tr>
-    
-            <tr>
-                <td>SLACK TECHNOLOGIES INC- CL A</td>
-                <td>WORK</td>
-                <td>28301.0</td>
-                <td>1217792.03</td>
-                <td>0.03</td>
-            </tr>
-    
-        </table>
-    </body>
-    </html>

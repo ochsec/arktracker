@@ -2,380 +2,652 @@
     <!DOCTYPE html>
     <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Arktracker.info</title>
-        <link rel="stylesheet" href="./css/styles.css" type="text/css" media="all">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Arktracker.info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     <body>
-        <h1>Arktracker.info</h1>
-        <table>
-            <tr>
-                <th>Funds</th>
-                <th>
-                    <a href="./arkk.html">ARKK</a>
-                </th>
-                <th>
-                    <a href="./arkf.html">ARKF</a>
-                </th>
-                <th>
-                    <a href="./arkg.html">ARKG</a>
-                </th>
-                <th>
-                    <a href="./arkq.html">ARKQ</a>
-                </th>
-                <th>
-                    <a href="./arkw.html">ARKW</a>
-                </th>
-                <th>
-                    <a href="./izrl.html">IZRL</a>
-                </th>
-                <th>
-                    <a href="./prnt.html">PRNT</a>
-                </th>
-            </tr>
-        </table>
-        <hr>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Arktracker.info</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link" href="#">ETFs:</a>
+            <a class="nav-link" aria-current="page" active href="./arkk.html">ARKK</a>
+            <a class="nav-link" href="./arkf.html">ARKF</a>
+            <a class="nav-link" href="./arkg.html">ARKG</a>
+            <a class="nav-link" href="./arkq.html">ARKQ</a>
+            <a class="nav-link" href="./arkw.html">ARKW</a>
+            <a class="nav-link" href="./izrl.html">IZRL</a>
+            <a class="nav-link" href="./prnt.html">PRNT</a>
+            </div>
+        </div>    
+        </div>
+    </nav>
     
-        <h2>IZRL / Israel Innovative Technology ETF</h2>
-        <h3>Holdings</h3>
-        <table>
-            <tr>
-                <th>Company</th>
-                <th>Ticker</th>
-                <th>Shares</th>
-                <th>Market Value ($)</th>
-                <th>Weight %</th>
+            <div class="container-fluid">
+                <div class="row pt-3">
+                <h2>IZRL / Israel Innovative Technology ETF</h2>
+                </div>
+                <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="holdings-tab" data-bs-toggle="tab" href="#holdings" role="tab" aria-controls="holdings" aria-selected="true">Holdings</a>
+                    <a class="nav-link" id="day-1-tab" data-bs-toggle="tab" href="#day-1" role="tab" aria-controls="day-1" aria-selected="false">1 Day &Delta;s</a>
+                    <!-- <a class="nav-link" id="day7-tab" data-bs-toggle="tab" href="#day7" role="tab" aria-controls="day7" aria-selected="false">7 Day &Delta;s</a> -->        
+                </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="holdings" role="tabpanel" aria-labelledby="holdings">
+                        <div class="row pt-3">
+                            <h3>Holdings as of 12/8/2020</h3>
+                        </div>
+                        <table class="table table-hover">
+                        <tr>
+                            <th>Company</th>
+                            <th>Ticker</th>
+                            <th>Shares</th>
+                            <th>Market Value ($)</th>
+                            <th>Weight %</th>
+                        </tr>
+            
+                <tr>
+                    <td>GAMIDA CELL LTD</td>
+                    <td>GMDA</td>
+                    <td>237858.0</td>
+                    <td>2616438.0</td>
+                    <td>4.75</td>
+                </tr>
+        
+                <tr>
+                    <td>ONE SOFTWARE TECHNOLOGIES LT</td>
+                    <td>ONE</td>
+                    <td>15316.0</td>
+                    <td>1984615.07</td>
+                    <td>3.6</td>
+                </tr>
+        
+                <tr>
+                    <td>PERION NETWORK LTD</td>
+                    <td>PERI</td>
+                    <td>159979.0</td>
+                    <td>1806162.91</td>
+                    <td>3.28</td>
+                </tr>
+        
+                <tr>
+                    <td>RADA ELECTRONIC INDS LTD</td>
+                    <td>RADA</td>
+                    <td>183676.0</td>
+                    <td>1700839.76</td>
+                    <td>3.09</td>
+                </tr>
+        
+                <tr>
+                    <td>FATTAL HOLDINGS 1998 LTD</td>
+                    <td>FTAL</td>
+                    <td>18457.0</td>
+                    <td>1687335.26</td>
+                    <td>3.06</td>
+                </tr>
+        
+                <tr>
+                    <td>TOWER SEMICONDUCTOR LTD</td>
+                    <td>TSEM</td>
+                    <td>62570.0</td>
+                    <td>1674373.2</td>
+                    <td>3.04</td>
+                </tr>
+        
+                <tr>
+                    <td>ITURAN LOCATION AND CONTROL</td>
+                    <td>ITRN</td>
+                    <td>88729.0</td>
+                    <td>1653908.56</td>
+                    <td>3.0</td>
+                </tr>
+        
+                <tr>
+                    <td>PARTNER COMMUNICATIONS CO</td>
+                    <td>PTNR</td>
+                    <td>312467.0</td>
+                    <td>1635475.78</td>
+                    <td>2.97</td>
+                </tr>
+        
+                <tr>
+                    <td>GILAT SATELLITE NETWORKS LTD</td>
+                    <td>GILT</td>
+                    <td>245948.0</td>
+                    <td>1601121.48</td>
+                    <td>2.91</td>
+                </tr>
+        
+                <tr>
+                    <td>CELLCOM ISRAEL LTD</td>
+                    <td>CEL</td>
+                    <td>317494.0</td>
+                    <td>1583815.04</td>
+                    <td>2.87</td>
+                </tr>
+        
+                <tr>
+                    <td>FIVERR INTERNATIONAL LTD</td>
+                    <td>FVRR</td>
+                    <td>7868.0</td>
+                    <td>1549287.88</td>
+                    <td>2.81</td>
+                </tr>
+        
+                <tr>
+                    <td>DANEL (ADIR YEOSHUA) LTD</td>
+                    <td>DANE</td>
+                    <td>10010.0</td>
+                    <td>1539527.24</td>
+                    <td>2.79</td>
+                </tr>
+        
+                <tr>
+                    <td>NOVA MEASURING INSTRUMENTS</td>
+                    <td>NVMI</td>
+                    <td>21272.0</td>
+                    <td>1487976.4</td>
+                    <td>2.7</td>
+                </tr>
+        
+                <tr>
+                    <td>TARO PHARMACEUTICAL INDUS</td>
+                    <td>TARO</td>
+                    <td>20656.0</td>
+                    <td>1483927.04</td>
+                    <td>2.69</td>
+                </tr>
+        
+                <tr>
+                    <td>TEVA PHARMACEUTICAL-SP ADR</td>
+                    <td>TEVA</td>
+                    <td>132708.0</td>
+                    <td>1465096.32</td>
+                    <td>2.66</td>
+                </tr>
+        
+                <tr>
+                    <td>SILICOM LTD</td>
+                    <td>SILC</td>
+                    <td>34726.0</td>
+                    <td>1398416.02</td>
+                    <td>2.54</td>
+                </tr>
+        
+                <tr>
+                    <td>CERAGON NETWORKS LTD</td>
+                    <td>CRNT</td>
+                    <td>481820.0</td>
+                    <td>1397278.0</td>
+                    <td>2.54</td>
+                </tr>
+        
+                <tr>
+                    <td>CAMTEK LTD</td>
+                    <td>CAMT</td>
+                    <td>67464.0</td>
+                    <td>1391782.32</td>
+                    <td>2.53</td>
+                </tr>
+        
+                <tr>
+                    <td>PLURISTEM THERAPEUTICS INC</td>
+                    <td>PSTI</td>
+                    <td>117459.0</td>
+                    <td>1346080.14</td>
+                    <td>2.44</td>
+                </tr>
+        
+                <tr>
+                    <td>HILAN LTD</td>
+                    <td>HLAN</td>
+                    <td>28286.0</td>
+                    <td>1340708.64</td>
+                    <td>2.43</td>
+                </tr>
+        
+                <tr>
+                    <td>STRATASYS LTD</td>
+                    <td>SSYS</td>
+                    <td>75856.0</td>
+                    <td>1335824.16</td>
+                    <td>2.42</td>
+                </tr>
+        
+                <tr>
+                    <td>RADWARE LTD</td>
+                    <td>RDWR</td>
+                    <td>50390.0</td>
+                    <td>1289984.0</td>
+                    <td>2.34</td>
+                </tr>
+        
+                <tr>
+                    <td>INMODE LTD</td>
+                    <td>INMD</td>
+                    <td>30434.0</td>
+                    <td>1288271.22</td>
+                    <td>2.34</td>
+                </tr>
+        
+                <tr>
+                    <td>ALLOT LTD</td>
+                    <td>ALLT</td>
+                    <td>121644.0</td>
+                    <td>1256582.52</td>
+                    <td>2.28</td>
+                </tr>
+        
+                <tr>
+                    <td>NICE LTD - SPON ADR</td>
+                    <td>NICE</td>
+                    <td>5248.0</td>
+                    <td>1255321.6</td>
+                    <td>2.28</td>
+                </tr>
+        
+                <tr>
+                    <td>ELBIT SYSTEMS LTD</td>
+                    <td>ESLT</td>
+                    <td>10344.0</td>
+                    <td>1246678.25</td>
+                    <td>2.26</td>
+                </tr>
+        
+                <tr>
+                    <td>CYBERARK SOFTWARE LTD/ISRAEL</td>
+                    <td>CYBR</td>
+                    <td>11003.0</td>
+                    <td>1247080.02</td>
+                    <td>2.26</td>
+                </tr>
+        
+                <tr>
+                    <td>CHECK POINT SOFTWARE TECH</td>
+                    <td>CHKP</td>
+                    <td>9664.0</td>
+                    <td>1190218.24</td>
+                    <td>2.16</td>
+                </tr>
+        
+                <tr>
+                    <td>BEZEQ THE ISRAELI TELECOM CO</td>
+                    <td>BEZQ</td>
+                    <td>1017767.0</td>
+                    <td>1142273.57</td>
+                    <td>2.07</td>
+                </tr>
+        
+                <tr>
+                    <td>MATRIX IT LTD</td>
+                    <td>MTRX</td>
+                    <td>51215.0</td>
+                    <td>1139386.35</td>
+                    <td>2.07</td>
+                </tr>
+        
+                <tr>
+                    <td>SAPIENS INTERNATIONAL CORP</td>
+                    <td>SPNS</td>
+                    <td>40555.0</td>
+                    <td>1134728.9</td>
+                    <td>2.06</td>
+                </tr>
+        
+                <tr>
+                    <td>POLYPID LTD</td>
+                    <td>PYPD</td>
+                    <td>111439.0</td>
+                    <td>1116618.78</td>
+                    <td>2.03</td>
+                </tr>
+        
+                <tr>
+                    <td>WIX.COM LTD</td>
+                    <td>WIX</td>
+                    <td>4309.0</td>
+                    <td>1082291.53</td>
+                    <td>1.96</td>
+                </tr>
+        
+                <tr>
+                    <td>REDHILL BIOPHARMA LTD-SP ADR</td>
+                    <td>RDHL</td>
+                    <td>122952.0</td>
+                    <td>1068452.88</td>
+                    <td>1.94</td>
+                </tr>
+        
+                <tr>
+                    <td>KAMADA LTD</td>
+                    <td>KMDA</td>
+                    <td>155200.0</td>
+                    <td>1027678.89</td>
+                    <td>1.87</td>
+                </tr>
+        
+                <tr>
+                    <td>UROGEN PHARMA LTD</td>
+                    <td>URGN UQ</td>
+                    <td>54488.0</td>
+                    <td>1019470.48</td>
+                    <td>1.85</td>
+                </tr>
+        
+                <tr>
+                    <td>AUDIOCODES LTD</td>
+                    <td>AUDC</td>
+                    <td>36958.0</td>
+                    <td>1019301.64</td>
+                    <td>1.85</td>
+                </tr>
+        
+                <tr>
+                    <td>BATM ADVANCED COMMUNICATIONS</td>
+                    <td>BATM</td>
+                    <td>824629.0</td>
+                    <td>969809.27</td>
+                    <td>1.76</td>
+                </tr>
+        
+                <tr>
+                    <td>AYALA PHARMACEUTICALS INC</td>
+                    <td>AYLA</td>
+                    <td>79730.0</td>
+                    <td>869057.0</td>
+                    <td>1.58</td>
+                </tr>
+        
+                <tr>
+                    <td>COMPUGEN LTD</td>
+                    <td>CGEN</td>
+                    <td>72110.0</td>
+                    <td>870367.7</td>
+                    <td>1.58</td>
+                </tr>
+        
+                <tr>
+                    <td>BIONDVAX PHARMACEUTICALS-ADR</td>
+                    <td>BVXV</td>
+                    <td>30604.0</td>
+                    <td>123640.16</td>
+                    <td>0.22</td>
+                </tr>
+        
+            </table>
+            <a href="https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_ISRAEL_INNOVATIVE_TECHNOLOGY_ETF_IZRL_HOLDINGS.csv">Data Source</a>
+            </div>
+        
+            <div class="tab-pane fade" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
+                <div class="container-fluid">
+                    <div class="row pt-3">
+                        <h3>1 Day Changes 12/7/2020 - 12/8/2020</h3>
+                    <table class="table table-hover">
+                        <tr>
+                            <th>Company</th>
+                            <th>Ticker</th>
+                            <th>&Delta; Shares</th>
+                            <th>&Delta; Market Value ($)</th>
+                            <th>&Delta; Weight %</th>
+                        </tr>
+        
+                <tr>
+                    <td>GAMIDA CELL LTD</td>
+                    <td>GMDA</td>
+            <td class="table-success">+12480</td><td class="table-success">+162071</td><td>0.0</td>
             </tr>
-
-            <tr>
-                <td>GAMIDA CELL LTD</td>
-                <td>GMDA</td>
-                <td>237858.0</td>
-                <td>2616438.0</td>
-                <td>4.75</td>
+        
+                <tr>
+                    <td>ONE SOFTWARE TECHNOLOGIES LT</td>
+                    <td>ONE</td>
+            <td class="table-success">+804</td><td class="table-success">+99013</td><td class="table-danger">-0.05</td>
             </tr>
+        
+                <tr>
+                    <td>PERION NETWORK LTD</td>
+                    <td>PERI</td>
+            <td class="table-success">+8588</td><td class="table-success">+440616</td><td class="table-success">+0.64</td>
+            </tr>
+        
+                <tr>
+                    <td>RADA ELECTRONIC INDS LTD</td>
+                    <td>RADA</td>
+            <td class="table-success">+9880</td><td class="table-success">+70633</td><td class="table-danger">-0.07</td>
+            </tr>
+        
+                <tr>
+                    <td>FATTAL HOLDINGS 1998 LTD</td>
+                    <td>FTAL</td>
+            <td class="table-success">+992</td><td class="table-success">+111703</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>TOWER SEMICONDUCTOR LTD</td>
+                    <td>TSEM</td>
+            <td class="table-success">+3276</td><td class="table-success">+76399</td><td class="table-danger">-0.05</td>
+            </tr>
+        
+                <tr>
+                    <td>ITURAN LOCATION AND CONTROL</td>
+                    <td>ITRN</td>
+            <td class="table-success">+4516</td><td class="table-success">+55545</td><td class="table-danger">-0.09</td>
+            </tr>
+        
+                <tr>
+                    <td>PARTNER COMMUNICATIONS CO</td>
+                    <td>PTNR</td>
+            <td class="table-success">+16264</td><td class="table-success">+152413</td><td class="table-success">+0.1</td>
+            </tr>
+        
+                <tr>
+                    <td>GILAT SATELLITE NETWORKS LTD</td>
+                    <td>GILT</td>
+            <td class="table-success">+12844</td><td class="table-success">+125573</td><td class="table-success">+0.05</td>
+            </tr>
+        
+                <tr>
+                    <td>CELLCOM ISRAEL LTD</td>
+                    <td>CEL</td>
+            <td class="table-success">+16288</td><td class="table-success">+191356</td><td class="table-success">+0.17</td>
+            </tr>
+        
+                <tr>
+                    <td>FIVERR INTERNATIONAL LTD</td>
+                    <td>FVRR</td>
+            <td class="table-success">+376</td><td class="table-success">+47141</td><td class="table-danger">-0.1</td>
+            </tr>
+        
+                <tr>
+                    <td>DANEL (ADIR YEOSHUA) LTD</td>
+                    <td>DANE</td>
+            <td class="table-success">+532</td><td class="table-success">+84419</td><td class="table-danger">-0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>NOVA MEASURING INSTRUMENTS</td>
+                    <td>NVMI</td>
+            <td class="table-success">+1132</td><td class="table-success">+87843</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>TARO PHARMACEUTICAL INDUS</td>
+                    <td>TARO</td>
+            <td class="table-success">+1092</td><td class="table-success">+115229</td><td class="table-success">+0.04</td>
+            </tr>
+        
+                <tr>
+                    <td>TEVA PHARMACEUTICAL-SP ADR</td>
+                    <td>TEVA</td>
+            <td class="table-success">+6984</td><td class="table-success">+200312</td><td class="table-success">+0.21</td>
+            </tr>
+        
+                <tr>
+                    <td>SILICOM LTD</td>
+                    <td>SILC</td>
+            <td class="table-success">+1808</td><td class="table-success">+65237</td><td class="table-danger">-0.04</td>
+            </tr>
+        
+                <tr>
+                    <td>CERAGON NETWORKS LTD</td>
+                    <td>CRNT</td>
+            <td class="table-success">+25400</td><td class="table-danger">-35880</td><td class="table-danger">-0.23</td>
+            </tr>
+        
+                <tr>
+                    <td>CAMTEK LTD</td>
+                    <td>CAMT</td>
+            <td class="table-success">+3552</td><td class="table-success">+42600</td><td class="table-danger">-0.08</td>
+            </tr>
+        
+                <tr>
+                    <td>PLURISTEM THERAPEUTICS INC</td>
+                    <td>PSTI</td>
+            <td class="table-success">+6336</td><td class="table-success">+79277</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>HILAN LTD</td>
+                    <td>HLAN</td>
+            <td class="table-success">+1488</td><td class="table-success">+81272</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>STRATASYS LTD</td>
+                    <td>SSYS</td>
+            <td class="table-success">+4456</td><td class="table-success">+101318</td><td class="table-success">+0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>RADWARE LTD</td>
+                    <td>RDWR</td>
+            <td class="table-success">+2644</td><td class="table-success">+69596</td><td class="table-danger">-0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>INMODE LTD</td>
+                    <td>INMD</td>
+            <td class="table-success">+1612</td><td class="table-success">+76017</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>ALLOT LTD</td>
+                    <td>ALLT</td>
+            <td class="table-success">+6372</td><td class="table-success">+87724</td><td class="table-success">+0.02</td>
+            </tr>
+        
+                <tr>
+                    <td>NICE LTD - SPON ADR</td>
+                    <td>NICE</td>
+            <td class="table-success">+272</td><td class="table-success">+62872</td><td class="table-danger">-0.03</td>
+            </tr>
+        
+                <tr>
+                    <td>ELBIT SYSTEMS LTD</td>
+                    <td>ESLT</td>
+            <td class="table-success">+544</td><td class="table-success">+72364</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>CYBERARK SOFTWARE LTD/ISRAEL</td>
+                    <td>CYBR</td>
+            <td class="table-success">+580</td><td class="table-success">+80954</td><td>0.0</td>
+            </tr>
+        
+                <tr>
+                    <td>CHECK POINT SOFTWARE TECH</td>
+                    <td>CHKP</td>
+            <td class="table-success">+508</td><td class="table-success">+95435</td><td class="table-success">+0.04</td>
+            </tr>
+        
+                <tr>
+                    <td>BEZEQ THE ISRAELI TELECOM CO</td>
+                    <td>BEZQ</td>
+            <td class="table-success">+53428</td><td class="table-success">+69666</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>MATRIX IT LTD</td>
+                    <td>MTRX</td>
+            <td class="table-success">+2700</td><td class="table-success">+50313</td><td class="table-danger">-0.04</td>
+            </tr>
+        
+                <tr>
+                    <td>SAPIENS INTERNATIONAL CORP</td>
+                    <td>SPNS</td>
+            <td class="table-success">+2108</td><td class="table-success">+65133</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>POLYPID LTD</td>
+                    <td>PYPD</td>
+            <td class="table-success">+4788</td><td class="table-success">+40510</td><td class="table-danger">-0.05</td>
+            </tr>
+        
+                <tr>
+                    <td>WIX.COM LTD</td>
+                    <td>WIX</td>
+            <td class="table-success">+228</td><td class="table-success">+33760</td><td class="table-danger">-0.07</td>
+            </tr>
+        
+                <tr>
+                    <td>REDHILL BIOPHARMA LTD-SP ADR</td>
+                    <td>RDHL</td>
+            <td class="table-success">+6496</td><td class="table-success">+59943</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>KAMADA LTD</td>
+                    <td>KMDA</td>
+            <td class="table-success">+8100</td><td class="table-success">+34059</td><td class="table-danger">-0.05</td>
+            </tr>
+        
+                <tr>
+                    <td>UROGEN PHARMA LTD</td>
+                    <td>URGN UQ</td>
+            <td class="table-success">+2860</td><td class="table-success">+39054</td><td class="table-danger">-0.05</td>
+            </tr>
+        
+                <tr>
+                    <td>AUDIOCODES LTD</td>
+                    <td>AUDC</td>
+            <td class="table-success">+1944</td><td class="table-success">+27004</td><td class="table-danger">-0.07</td>
+            </tr>
+        
+                <tr>
+                    <td>BATM ADVANCED COMMUNICATIONS</td>
+                    <td>BATM</td>
+            <td class="table-success">+42752</td><td class="table-success">+66285</td><td class="table-success">+0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>AYALA PHARMACEUTICALS INC</td>
+                    <td>AYLA</td>
+            <td class="table-success">+5000</td><td class="table-success">+47027</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                <tr>
+                    <td>COMPUGEN LTD</td>
+                    <td>CGEN</td>
+            <td class="table-success">+4052</td><td class="table-success">+12836</td><td class="table-danger">-0.08</td>
+            </tr>
+        
+                <tr>
+                    <td>BIONDVAX PHARMACEUTICALS-ADR</td>
+                    <td>BVXV</td>
+            <td class="table-success">+1624</td><td class="table-success">+3083</td><td class="table-danger">-0.01</td>
+            </tr>
+        
+                </table>
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        </body>
+        </html>
     
-            <tr>
-                <td>ONE SOFTWARE TECHNOLOGIES LT</td>
-                <td>ONE</td>
-                <td>15316.0</td>
-                <td>1984615.07</td>
-                <td>3.6</td>
-            </tr>
-    
-            <tr>
-                <td>PERION NETWORK LTD</td>
-                <td>PERI</td>
-                <td>159979.0</td>
-                <td>1806162.91</td>
-                <td>3.28</td>
-            </tr>
-    
-            <tr>
-                <td>RADA ELECTRONIC INDS LTD</td>
-                <td>RADA</td>
-                <td>183676.0</td>
-                <td>1700839.76</td>
-                <td>3.09</td>
-            </tr>
-    
-            <tr>
-                <td>FATTAL HOLDINGS 1998 LTD</td>
-                <td>FTAL</td>
-                <td>18457.0</td>
-                <td>1687335.26</td>
-                <td>3.06</td>
-            </tr>
-    
-            <tr>
-                <td>TOWER SEMICONDUCTOR LTD</td>
-                <td>TSEM</td>
-                <td>62570.0</td>
-                <td>1674373.2</td>
-                <td>3.04</td>
-            </tr>
-    
-            <tr>
-                <td>ITURAN LOCATION AND CONTROL</td>
-                <td>ITRN</td>
-                <td>88729.0</td>
-                <td>1653908.56</td>
-                <td>3.0</td>
-            </tr>
-    
-            <tr>
-                <td>PARTNER COMMUNICATIONS CO</td>
-                <td>PTNR</td>
-                <td>312467.0</td>
-                <td>1635475.78</td>
-                <td>2.97</td>
-            </tr>
-    
-            <tr>
-                <td>GILAT SATELLITE NETWORKS LTD</td>
-                <td>GILT</td>
-                <td>245948.0</td>
-                <td>1601121.48</td>
-                <td>2.91</td>
-            </tr>
-    
-            <tr>
-                <td>CELLCOM ISRAEL LTD</td>
-                <td>CEL</td>
-                <td>317494.0</td>
-                <td>1583815.04</td>
-                <td>2.87</td>
-            </tr>
-    
-            <tr>
-                <td>FIVERR INTERNATIONAL LTD</td>
-                <td>FVRR</td>
-                <td>7868.0</td>
-                <td>1549287.88</td>
-                <td>2.81</td>
-            </tr>
-    
-            <tr>
-                <td>DANEL (ADIR YEOSHUA) LTD</td>
-                <td>DANE</td>
-                <td>10010.0</td>
-                <td>1539527.24</td>
-                <td>2.79</td>
-            </tr>
-    
-            <tr>
-                <td>NOVA MEASURING INSTRUMENTS</td>
-                <td>NVMI</td>
-                <td>21272.0</td>
-                <td>1487976.4</td>
-                <td>2.7</td>
-            </tr>
-    
-            <tr>
-                <td>TARO PHARMACEUTICAL INDUS</td>
-                <td>TARO</td>
-                <td>20656.0</td>
-                <td>1483927.04</td>
-                <td>2.69</td>
-            </tr>
-    
-            <tr>
-                <td>TEVA PHARMACEUTICAL-SP ADR</td>
-                <td>TEVA</td>
-                <td>132708.0</td>
-                <td>1465096.32</td>
-                <td>2.66</td>
-            </tr>
-    
-            <tr>
-                <td>SILICOM LTD</td>
-                <td>SILC</td>
-                <td>34726.0</td>
-                <td>1398416.02</td>
-                <td>2.54</td>
-            </tr>
-    
-            <tr>
-                <td>CERAGON NETWORKS LTD</td>
-                <td>CRNT</td>
-                <td>481820.0</td>
-                <td>1397278.0</td>
-                <td>2.54</td>
-            </tr>
-    
-            <tr>
-                <td>CAMTEK LTD</td>
-                <td>CAMT</td>
-                <td>67464.0</td>
-                <td>1391782.32</td>
-                <td>2.53</td>
-            </tr>
-    
-            <tr>
-                <td>PLURISTEM THERAPEUTICS INC</td>
-                <td>PSTI</td>
-                <td>117459.0</td>
-                <td>1346080.14</td>
-                <td>2.44</td>
-            </tr>
-    
-            <tr>
-                <td>HILAN LTD</td>
-                <td>HLAN</td>
-                <td>28286.0</td>
-                <td>1340708.64</td>
-                <td>2.43</td>
-            </tr>
-    
-            <tr>
-                <td>STRATASYS LTD</td>
-                <td>SSYS</td>
-                <td>75856.0</td>
-                <td>1335824.16</td>
-                <td>2.42</td>
-            </tr>
-    
-            <tr>
-                <td>RADWARE LTD</td>
-                <td>RDWR</td>
-                <td>50390.0</td>
-                <td>1289984.0</td>
-                <td>2.34</td>
-            </tr>
-    
-            <tr>
-                <td>INMODE LTD</td>
-                <td>INMD</td>
-                <td>30434.0</td>
-                <td>1288271.22</td>
-                <td>2.34</td>
-            </tr>
-    
-            <tr>
-                <td>ALLOT LTD</td>
-                <td>ALLT</td>
-                <td>121644.0</td>
-                <td>1256582.52</td>
-                <td>2.28</td>
-            </tr>
-    
-            <tr>
-                <td>NICE LTD - SPON ADR</td>
-                <td>NICE</td>
-                <td>5248.0</td>
-                <td>1255321.6</td>
-                <td>2.28</td>
-            </tr>
-    
-            <tr>
-                <td>ELBIT SYSTEMS LTD</td>
-                <td>ESLT</td>
-                <td>10344.0</td>
-                <td>1246678.25</td>
-                <td>2.26</td>
-            </tr>
-    
-            <tr>
-                <td>CYBERARK SOFTWARE LTD/ISRAEL</td>
-                <td>CYBR</td>
-                <td>11003.0</td>
-                <td>1247080.02</td>
-                <td>2.26</td>
-            </tr>
-    
-            <tr>
-                <td>CHECK POINT SOFTWARE TECH</td>
-                <td>CHKP</td>
-                <td>9664.0</td>
-                <td>1190218.24</td>
-                <td>2.16</td>
-            </tr>
-    
-            <tr>
-                <td>BEZEQ THE ISRAELI TELECOM CO</td>
-                <td>BEZQ</td>
-                <td>1017767.0</td>
-                <td>1142273.57</td>
-                <td>2.07</td>
-            </tr>
-    
-            <tr>
-                <td>MATRIX IT LTD</td>
-                <td>MTRX</td>
-                <td>51215.0</td>
-                <td>1139386.35</td>
-                <td>2.07</td>
-            </tr>
-    
-            <tr>
-                <td>SAPIENS INTERNATIONAL CORP</td>
-                <td>SPNS</td>
-                <td>40555.0</td>
-                <td>1134728.9</td>
-                <td>2.06</td>
-            </tr>
-    
-            <tr>
-                <td>POLYPID LTD</td>
-                <td>PYPD</td>
-                <td>111439.0</td>
-                <td>1116618.78</td>
-                <td>2.03</td>
-            </tr>
-    
-            <tr>
-                <td>WIX.COM LTD</td>
-                <td>WIX</td>
-                <td>4309.0</td>
-                <td>1082291.53</td>
-                <td>1.96</td>
-            </tr>
-    
-            <tr>
-                <td>REDHILL BIOPHARMA LTD-SP ADR</td>
-                <td>RDHL</td>
-                <td>122952.0</td>
-                <td>1068452.88</td>
-                <td>1.94</td>
-            </tr>
-    
-            <tr>
-                <td>KAMADA LTD</td>
-                <td>KMDA</td>
-                <td>155200.0</td>
-                <td>1027678.89</td>
-                <td>1.87</td>
-            </tr>
-    
-            <tr>
-                <td>UROGEN PHARMA LTD</td>
-                <td>URGN UQ</td>
-                <td>54488.0</td>
-                <td>1019470.48</td>
-                <td>1.85</td>
-            </tr>
-    
-            <tr>
-                <td>AUDIOCODES LTD</td>
-                <td>AUDC</td>
-                <td>36958.0</td>
-                <td>1019301.64</td>
-                <td>1.85</td>
-            </tr>
-    
-            <tr>
-                <td>BATM ADVANCED COMMUNICATIONS</td>
-                <td>BATM</td>
-                <td>824629.0</td>
-                <td>969809.27</td>
-                <td>1.76</td>
-            </tr>
-    
-            <tr>
-                <td>AYALA PHARMACEUTICALS INC</td>
-                <td>AYLA</td>
-                <td>79730.0</td>
-                <td>869057.0</td>
-                <td>1.58</td>
-            </tr>
-    
-            <tr>
-                <td>COMPUGEN LTD</td>
-                <td>CGEN</td>
-                <td>72110.0</td>
-                <td>870367.7</td>
-                <td>1.58</td>
-            </tr>
-    
-            <tr>
-                <td>BIONDVAX PHARMACEUTICALS-ADR</td>
-                <td>BVXV</td>
-                <td>30604.0</td>
-                <td>123640.16</td>
-                <td>0.22</td>
-            </tr>
-    
-        </table>
-    </body>
-    </html>
