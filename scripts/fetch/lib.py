@@ -21,7 +21,7 @@ def insert_data(fund_name, df, conn):
 	cur.executescript(insert_sql)
 	conn.commit()
 
-def check_updated(url, conn):
+def check_updated(name, url, conn):
     r = requests.get(url)
     data = r.content.decode('utf8')
     df = pd.read_csv(io.StringIO(data))
@@ -29,7 +29,7 @@ def check_updated(url, conn):
     last_updated = df['date'][1]
     print(f"Holdings last updated: {last_updated}")
 
-    query = conn.execute(f"SELECT COUNT(*) FROM ARKK WHERE date = \"{last_updated}\";")
+    query = conn.execute(f"SELECT COUNT(*) FROM {name} WHERE date = \"{last_updated}\";")
     count = query.fetchone()[0]
 
     if count == 0:
