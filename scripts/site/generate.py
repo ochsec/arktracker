@@ -28,7 +28,7 @@ for fund in funds:
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="holdings" role="tabpanel" aria-labelledby="holdings">
                         <div class="row pt-3">
-                            <h3>Holdings as of 12/8/2020</h3>
+                            <h3>Holdings as of {end_date_str}</h3>
                         </div>
                         <table class="table table-hover">
                         <tr>
