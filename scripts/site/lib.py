@@ -67,8 +67,60 @@ def get_daily_changes(fund_name):
             'weight': 'prev_weight'
         })
 
+    new_companies = []
+    
+    for i, irow in df1.iterrows():
+        found = False
+        company = irow['company']
+        for j, jrow in df2.iterrows():
+            if jrow['company'] == company:
+                found = True
+
+        if not found:
+            new_companies.append(company)
+
+    print(new_companies)
+
+    removed_companies = []
+
+    for i, irow in df2.iterrows():
+        found = False
+        company = irow['company']
+        for j, jrow in df1.iterrows():
+            if jrow['company'] == company:
+                found = True
+
+        if not found:
+            removed_companies.append(company)
+
+    print(removed_companies)
+
     df = pd.merge(df1, df2, how='left', on=['company'])
     df['shares_diff'] = df['shares'] - df['prev_shares']
     df['value_diff'] = df['value'] - df['prev_value']
     df['weight_diff'] = df['weight'] - df['prev_weight']
+
+    for company in new_companies:
+        for _, row in df.iterrows():
+            if row['company'] == company:
+                df = df.replace([company], f"{company} - Added")
+
+    for company in removed_companies:
+        for _, row in df2.iterrows():
+            if row['company'] == company:
+                d = {
+                    'company': f"{row['company']} - Removed",
+                    'ticker': row['ticker'],
+                    'shares': 0,
+                    'value': 0,
+                    'weight': 0,
+                    'prev_shares': row['shares'],
+                    'prev_value': row['value'],
+                    'prev_weight': row['weight'],
+                    'shares_diff': -(row['shares']),
+                    'value_diff': -(row['value']),
+                    'weight_diff': -(row['weight']),
+                }
+                df.append(d)
+
     return df, date2_str, date1_str
