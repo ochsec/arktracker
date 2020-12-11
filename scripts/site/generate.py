@@ -94,31 +94,45 @@ for fund in funds:
                 <td>{row["ticker"]}</td>
             """
 
-
-        if row["shares_diff"] > 0:
-            html += f"""<td class="table-success">+{row["shares_diff"]}</td>"""
-        elif row["shares_diff"] < 0:
-            html += f"""<td class="table-danger">{row["shares_diff"]}</td>"""
+        if "- Added" in row["company"]:
+            html += f"""<td class="table-success">+{row["shares"]}</td>"""
+        elif "- Removed" in row["company"]:
+            html += f"""<td class="table-danger">+{-(row["prev_shares"])}</td>"""
         else:
-            html += f"""<td>{row["shares_diff"]}</td>"""
+            if row["shares_diff"] > 0:
+                html += f"""<td class="table-success">+{row["shares_diff"]}</td>"""
+            elif row["shares_diff"] < 0:
+                html += f"""<td class="table-danger">{row["shares_diff"]}</td>"""
+            else:
+                html += f"""<td>{row["shares_diff"]}</td>"""
 
-        if row["value_diff"] == 0:
-            html += f"""<td>{int(row["value_diff"])}</td>"""
-        elif row["value_diff"] > 0:
-            html += f"""<td class="table-success">+{int(row["value_diff"])}</td>"""
-        elif row["value_diff"] < 0:
-            html += f"""<td class="table-danger">{int(row["value_diff"])}</td>"""
+        if "- Added" in row["company"]:
+            html += f"""<td class="table-success">+{row["value"]}</td>"""
+        elif "- Removed" in row["company"]:
+            html += f"""<td class="table-success">+{-(row["prev_value"])}</td>"""
         else:
-            html += f"""<td>{row["value_diff"]}</td>"""
+            if row["value_diff"] == 0:
+                html += f"""<td>{int(row["value_diff"])}</td>"""
+            elif row["value_diff"] > 0:
+                html += f"""<td class="table-success">+{int(row["value_diff"])}</td>"""
+            elif row["value_diff"] < 0:
+                html += f"""<td class="table-danger">{int(row["value_diff"])}</td>"""
+            else:
+                html += f"""<td>{row["value_diff"]}</td>"""
 
-        if row["weight_diff"] == 0:
-            html += f"""<td>{round_half_up(row["weight_diff"], 2)}</td>"""
-        elif row["weight_diff"] > 0:
-            html += f"""<td class="table-success">+{round_half_up(row["weight_diff"], 2)}</td>"""
-        elif row["weight_diff"] < 0:
-            html += f"""<td class="table-danger">{round_half_up(row["weight_diff"], 2)}</td>"""
+        if "- Added" in row["company"]:
+            html += f"""<td class="table-success">+{row["weight"]}</td>"""
+        elif "- Removed" in row["company"]:
+            html += f"""<td class="table-success">+{-(row["prev_weight"])}</td>"""        
         else:
-            html += f"""<td>{row["weight_diff"]}</td>"""
+            if row["weight_diff"] == 0:
+                html += f"""<td>{round_half_up(row["weight_diff"], 2)}</td>"""
+            elif row["weight_diff"] > 0:
+                html += f"""<td class="table-success">+{round_half_up(row["weight_diff"], 2)}</td>"""
+            elif row["weight_diff"] < 0:
+                html += f"""<td class="table-danger">{round_half_up(row["weight_diff"], 2)}</td>"""
+            else:
+                html += f"""<td>{row["weight_diff"]}</td>"""
 
         html += """
             </tr>
