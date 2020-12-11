@@ -5,13 +5,12 @@ import pandas as pd
 from datetime import date
 
 from funds import funds
-from lib import connect_db, fetch_current_holdings, get_daily_changes, round_half_up
+from lib import connect_db, fetch_current_holdings, get_days_changes, round_half_up
 from generate_header import get_header
 
 for fund in funds:
     current_holdings_df = fetch_current_holdings(fund["csv_url"])
-    daily_changes_df, start_date_str, end_date_str = get_daily_changes(fund["name"])
-    # print(daily_changes_df)
+    daily_changes_df, start_date_str, end_date_str = get_days_changes(fund["name"], 1)
 
     html = get_header()
     html += f"""
