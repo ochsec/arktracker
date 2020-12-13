@@ -71,7 +71,7 @@ def get_days_changes(fund_name, period_days=0):
         print(f"No market data at or before {period_days} ago.")
     else:
         df2 = pd.read_sql_query(f"SELECT * FROM {fund_name} WHERE date = \"{date2_str}\";", conn, index_col="id")
-        df2 = df2[['company', 'shares', 'value', 'weight']]
+        df2 = df2[['company', 'ticker', 'shares', 'value', 'weight']]
         df2 = df2.rename(columns = {
             'shares': 'prev_shares',
             'value': 'prev_value',
@@ -90,7 +90,7 @@ def get_days_changes(fund_name, period_days=0):
         if not found:
             new_companies.append(company)
 
-    print(new_companies)
+    print(f"New companies for {fund_name}: {new_companies}")
 
     removed_companies = []
 
@@ -104,9 +104,9 @@ def get_days_changes(fund_name, period_days=0):
         if not found:
             removed_companies.append(company)
 
-    print(removed_companies)
+    print(f"Removed companies from {fund_name}: {removed_companies}")
 
-    df = pd.merge(df1, df2, how='left', on=['company'])
+    df = pd.merge(df1, df2[['company', 'prev_shares', 'prev_value', 'prev_weight']], how='left', on=['company'])
     df['shares_diff'] = df['shares'] - df['prev_shares']
     df['value_diff'] = df['value'] - df['prev_value']
     df['weight_diff'] = df['weight'] - df['prev_weight']
@@ -119,19 +119,20 @@ def get_days_changes(fund_name, period_days=0):
     for company in removed_companies:
         for _, row in df2.iterrows():
             if row['company'] == company:
+                print(f"Removed company row: {row}")
                 d = {
                     'company': f"{row['company']} - Removed",
                     'ticker': row['ticker'],
                     'shares': 0,
                     'value': 0,
                     'weight': 0,
-                    'prev_shares': row['shares'],
-                    'prev_value': row['value'],
-                    'prev_weight': row['weight'],
-                    'shares_diff': -(row['shares']),
-                    'value_diff': -(row['value']),
-                    'weight_diff': -(row['weight']),
+                    'prev_shares': row['prev_shares'],
+                    'prev_value': row['prev_value'],
+                    'prev_weight': row['prev_weight'],
+                    'shares_diff': -(row['prev_shares']),
+                    'value_diff': -(row['prev_value']),
+                    'weight_diff': -(row['prev_weight']),
                 }
-                df.append(d)
+                df.append(d, ignore_index=True)
 
     return df, date2_str, date1_str
