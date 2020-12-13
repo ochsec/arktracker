@@ -37,7 +37,7 @@
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a class="nav-link active" id="holdings-tab" data-bs-toggle="tab" href="#holdings" role="tab" aria-controls="holdings" aria-selected="true">Holdings</a>
                     <a class="nav-link" id="day-1-tab" data-bs-toggle="tab" href="#day-1" role="tab" aria-controls="day-1" aria-selected="false">1 Day &Delta;s</a>
-                    <!-- <a class="nav-link" id="day7-tab" data-bs-toggle="tab" href="#day7" role="tab" aria-controls="day7" aria-selected="false">7 Day &Delta;s</a> -->        
+                    <a class="nav-link" id="day-5-tab" data-bs-toggle="tab" href="#day-5" role="tab" aria-controls="day-5" aria-selected="false">5 Day &Delta;s</a>
                 </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
@@ -378,301 +378,444 @@
             <a href="https://ark-funds.com/wp-content/fundsiteliterature/csv/ARK_AUTONOMOUS_TECHNOLOGY_&_ROBOTICS_ETF_ARKQ_HOLDINGS.csv">Data Source</a>
             </div>
         
-            <div class="tab-pane fade" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
-                <div class="container-fluid">
-                    <div class="row pt-3">
-                        <h3>1 Day Changes 12/10/2020 - 12/11/2020</h3>
-                    <table class="table table-hover">
-                        <tr>
-                            <th>Company</th>
-                            <th>Ticker</th>
-                            <th>&Delta; Shares</th>
-                            <th>&Delta; Market Value ($)</th>
-                            <th>&Delta; Weight %</th>
-                        </tr>
-        
+        <div class="tab-pane fade" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
+            <div class="container-fluid">
+                <div class="row pt-3">
+                    <h3>1 Market Day Changes 12/10/2020 - 12/11/2020</h3>
+                </div>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Company</th>
+                        <th>ticker</th>
+                        <th>&Delta; Shares</th>
+                        <th>&Delta; Market Value ($)</th>
+                        <th>&Delta; Weight %</th>
+                    </tr>
+    
                 <tr>
             
                 <td>TESLA INC</td>
                 <td>TSLA</td>
             <td class="table-success">+4110</td><td class="table-danger">-1669615</td><td class="table-danger">-0.26</td>
-            </tr>
-        
                 <tr>
             
                 <td>MATERIALISE NV-ADR</td>
                 <td>MTLS</td>
             <td class="table-success">+30192</td><td class="table-danger">-736625</td><td class="table-danger">-0.12</td>
-            </tr>
-        
                 <tr>
             
                 <td>ALPHABET INC-CL C</td>
                 <td>GOOG</td>
             <td class="table-success">+498</td><td class="table-success">+1077456</td><td class="table-success">+0.04</td>
-            </tr>
-        
                 <tr>
             
                 <td>TRIMBLE INC</td>
                 <td>TRMB</td>
             <td class="table-success">+13854</td><td class="table-success">+1249642</td><td class="table-success">+0.05</td>
-            </tr>
-        
                 <tr>
             
                 <td>DEERE & CO</td>
                 <td>DE</td>
             <td class="table-success">+3342</td><td class="table-success">+1315734</td><td class="table-success">+0.06</td>
-            </tr>
-        
                 <tr>
             
                 <td>PROTO LABS INC</td>
                 <td>PRLB</td>
             <td class="table-success">+5334</td><td class="table-success">+1517544</td><td class="table-success">+0.08</td>
-            </tr>
-        
                 <tr>
             
                 <td>FLIR SYSTEMS INC</td>
                 <td>FLIR</td>
             <td class="table-success">+17190</td><td class="table-success">+596700</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>KRATOS DEFENSE & SECURITY</td>
                 <td>KTOS</td>
             <td class="table-success">+30054</td><td class="table-success">+1199493</td><td class="table-success">+0.05</td>
-            </tr>
-        
                 <tr>
             
                 <td>JD.COM INC-ADR</td>
                 <td>JD</td>
             <td class="table-success">+8628</td><td class="table-success">+1174586</td><td class="table-success">+0.06</td>
-            </tr>
-        
                 <tr>
             
                 <td>NXP SEMICONDUCTORS NV</td>
                 <td>NXPI</td>
             <td class="table-success">+4392</td><td class="table-success">+384070</td><td class="table-danger">-0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>TAIWAN SEMICONDUCTOR-SP ADR</td>
                 <td>TSM</td>
             <td class="table-success">+6462</td><td class="table-success">+595361</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>2U INC</td>
                 <td>TWOU</td>
             <td>0</td><td class="table-danger">-612700</td><td class="table-danger">-0.09</td>
-            </tr>
-        
                 <tr>
             
                 <td>IRIDIUM COMMUNICATIONS INC</td>
                 <td>IRDM</td>
             <td class="table-success">+19386</td><td class="table-danger">-521332</td><td class="table-danger">-0.07</td>
-            </tr>
-        
                 <tr>
             
                 <td>CATERPILLAR INC</td>
                 <td>CAT</td>
             <td class="table-success">+3360</td><td class="table-success">+690310</td><td class="table-success">+0.02</td>
-            </tr>
-        
                 <tr>
             
                 <td>VIRGIN GALACTIC HOLDINGS INC</td>
                 <td>SPCE</td>
             <td class="table-success">+18108</td><td class="table-success">+429373</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>WORKHORSE GROUP INC</td>
                 <td>WKHS</td>
             <td class="table-success">+24870</td><td class="table-success">+1495852</td><td class="table-success">+0.09</td>
-            </tr>
-        
                 <tr>
             
                 <td>XILINX INC</td>
                 <td>XLNX</td>
             <td class="table-success">+3612</td><td class="table-success">+513068</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>BYD CO LTD-UNSPONSORED ADR</td>
                 <td>BYDDY</td>
             <td class="table-success">+11628</td><td class="table-danger">-481132</td><td class="table-danger">-0.07</td>
-            </tr>
-        
                 <tr>
             
                 <td>STRATASYS LTD</td>
                 <td>SSYS</td>
             <td>0</td><td class="table-danger">-626558</td><td class="table-danger">-0.08</td>
-            </tr>
-        
                 <tr>
             
                 <td>KOMATSU LTD -SPONS ADR</td>
                 <td>KMTUY</td>
             <td class="table-success">+18504</td><td class="table-success">+620686</td><td class="table-success">+0.02</td>
-            </tr>
-        
                 <tr>
             
                 <td>BAIDU INC - SPON ADR</td>
                 <td>BIDU</td>
             <td class="table-success">+2916</td><td class="table-success">+977023</td><td class="table-success">+0.05</td>
-            </tr>
-        
                 <tr>
             
                 <td>AEROVIRONMENT INC</td>
                 <td>AVAV</td>
             <td class="table-success">+5472</td><td class="table-danger">-371072</td><td class="table-danger">-0.06</td>
-            </tr>
-        
                 <tr>
             
                 <td>NANO DIMENSION LTD - ADR</td>
                 <td>NNDM</td>
             <td class="table-success">+64242</td><td class="table-danger">-751760</td><td class="table-danger">-0.08</td>
-            </tr>
-        
                 <tr>
             
                 <td>SYNOPSYS INC</td>
                 <td>SNPS</td>
             <td class="table-success">+1668</td><td class="table-success">+614657</td><td class="table-success">+0.03</td>
-            </tr>
-        
                 <tr>
             
                 <td>TERADYNE INC</td>
                 <td>TER</td>
             <td class="table-success">+3204</td><td class="table-success">+310583</td><td>0.0</td>
-            </tr>
-        
                 <tr>
             
                 <td>SPLUNK INC</td>
                 <td>SPLK</td>
             <td class="table-success">+2328</td><td class="table-success">+605347</td><td class="table-success">+0.03</td>
-            </tr>
-        
                 <tr>
             
                 <td>NIU TECHNOLOGIES-SPONS ADR</td>
                 <td>NIU</td>
             <td class="table-success">+10260</td><td class="table-success">+811892</td><td class="table-success">+0.05</td>
-            </tr>
-        
                 <tr>
             
                 <td>ANSYS INC</td>
                 <td>ANSS</td>
             <td class="table-success">+858</td><td class="table-success">+346076</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>INTUITIVE SURGICAL INC</td>
                 <td>ISRG</td>
             <td class="table-success">+348</td><td class="table-success">+304446</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>AMAZON.COM INC</td>
                 <td>AMZN</td>
             <td class="table-success">+84</td><td class="table-success">+336862</td><td class="table-success">+0.02</td>
-            </tr>
-        
                 <tr>
             
                 <td>RAVEN INDUSTRIES INC</td>
                 <td>RAVN</td>
             <td class="table-success">+6642</td><td class="table-success">+298428</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>TENCENT HOLDINGS LTD-UNS ADR</td>
                 <td>TCEHY</td>
             <td class="table-success">+2790</td><td class="table-success">+93435</td><td class="table-danger">-0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>AUTODESK INC</td>
                 <td>ADSK</td>
             <td class="table-success">+744</td><td class="table-success">+142387</td><td>0.0</td>
-            </tr>
-        
                 <tr>
             
                 <td>ELBIT SYSTEMS LTD</td>
                 <td>ESLT</td>
             <td class="table-success">+1728</td><td class="table-success">+364455</td><td class="table-success">+0.02</td>
-            </tr>
-        
                 <tr>
             
                 <td>NVIDIA CORP</td>
                 <td>NVDA</td>
             <td class="table-success">+390</td><td class="table-success">+241076</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>APPLE INC</td>
                 <td>AAPL</td>
             <td class="table-success">+1560</td><td class="table-success">+114036</td><td>0.0</td>
-            </tr>
-        
                 <tr>
             
                 <td>EXONE CO/THE</td>
                 <td>XONE</td>
             <td>0</td><td class="table-danger">-618439</td><td class="table-danger">-0.06</td>
-            </tr>
-        
                 <tr>
             
                 <td>ROCKWELL AUTOMATION INC</td>
                 <td>ROK</td>
             <td class="table-success">+750</td><td class="table-success">+182803</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>HONEYWELL INTERNATIONAL INC</td>
                 <td>HON</td>
             <td class="table-success">+504</td><td class="table-success">+187973</td><td class="table-success">+0.01</td>
-            </tr>
-        
                 <tr>
             
                 <td>ORGANOVO HOLDINGS INC</td>
                 <td>ONVO </td>
             <td>0</td><td class="table-success">+9858</td><td>0.0</td>
-            </tr>
-        
-                </table>
-            </div>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+        <div class="tab-pane fade" id="day-5" role="tabpanel" aria-labelledby="day-5-tab">
+            <div class="container-fluid">
+                <div class="row pt-3">
+                    <h3>5 Market Day Changes 12/4/2020 - 12/11/2020</h3>
+                </div>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Company</th>
+                        <th>ticker</th>
+                        <th>&Delta; Shares</th>
+                        <th>&Delta; Market Value ($)</th>
+                        <th>&Delta; Weight %</th>
+                    </tr>
+    
+                <tr>
+            
+                <td>TESLA INC</td>
+                <td>TSLA</td>
+            <td class="table-success">+19180</td><td class="table-success">+14212260</td><td class="table-success">+0.31</td>
+                <tr>
+            
+                <td>MATERIALISE NV-ADR</td>
+                <td>MTLS</td>
+            <td class="table-success">+75985</td><td class="table-danger">-8126335</td><td class="table-danger">-1.12</td>
+                <tr>
+            
+                <td>ALPHABET INC-CL C</td>
+                <td>GOOG</td>
+            <td class="table-success">+2324</td><td class="table-success">+2860631</td><td class="table-danger">-0.07</td>
+                <tr>
+            
+                <td>TRIMBLE INC</td>
+                <td>TRMB</td>
+            <td class="table-success">+64630</td><td class="table-success">+3922162</td><td class="table-success">+0.02</td>
+                <tr>
+            
+                <td>DEERE & CO</td>
+                <td>DE</td>
+            <td class="table-success">+39155</td><td class="table-success">+10402312</td><td class="table-success">+0.58</td>
+                <tr>
+            
+                <td>PROTO LABS INC</td>
+                <td>PRLB</td>
+            <td class="table-success">+24894</td><td class="table-success">+7484879</td><td class="table-success">+0.35</td>
+                <tr>
+            
+                <td>FLIR SYSTEMS INC</td>
+                <td>FLIR</td>
+            <td class="table-success">+80198</td><td class="table-success">+3970365</td><td class="table-success">+0.08</td>
+                <tr>
+            
+                <td>KRATOS DEFENSE & SECURITY</td>
+                <td>KTOS</td>
+            <td class="table-success">+140230</td><td class="table-success">+4602702</td><td class="table-success">+0.13</td>
+                <tr>
+            
+                <td>JD.COM INC-ADR</td>
+                <td>JD</td>
+            <td class="table-success">+40242</td><td class="table-success">+2082049</td><td class="table-danger">-0.07</td>
+                <tr>
+            
+                <td>NXP SEMICONDUCTORS NV</td>
+                <td>NXPI</td>
+            <td class="table-success">+20496</td><td class="table-success">+1529391</td><td class="table-danger">-0.12</td>
+                <tr>
+            
+                <td>TAIWAN SEMICONDUCTOR-SP ADR</td>
+                <td>TSM</td>
+            <td class="table-success">+30156</td><td class="table-success">+3245340</td><td class="table-success">+0.03</td>
+                <tr>
+            
+                <td>2U INC</td>
+                <td>TWOU</td>
+            <td>0</td><td class="table-success">+1561784</td><td class="table-danger">-0.11</td>
+                <tr>
+            
+                <td>IRIDIUM COMMUNICATIONS INC</td>
+                <td>IRDM</td>
+            <td class="table-success">+90468</td><td class="table-success">+1823795</td><td class="table-danger">-0.07</td>
+                <tr>
+            
+                <td>CATERPILLAR INC</td>
+                <td>CAT</td>
+            <td class="table-success">+15678</td><td class="table-success">+2263566</td><td class="table-danger">-0.02</td>
+                <tr>
+            
+                <td>VIRGIN GALACTIC HOLDINGS INC</td>
+                <td>SPCE</td>
+            <td class="table-success">+67882</td><td class="table-success">+5565415</td><td class="table-success">+0.27</td>
+                <tr>
+            
+                <td>WORKHORSE GROUP INC</td>
+                <td>WKHS</td>
+            <td class="table-success">+116038</td><td class="table-success">+2124733</td><td class="table-danger">-0.01</td>
+                <tr>
+            
+                <td>XILINX INC</td>
+                <td>XLNX</td>
+            <td class="table-success">+16856</td><td class="table-success">+1601907</td><td class="table-danger">-0.05</td>
+                <tr>
+            
+                <td>BYD CO LTD-UNSPONSORED ADR</td>
+                <td>BYDDY</td>
+            <td class="table-success">+54264</td><td class="table-success">+1638279</td><td class="table-danger">-0.05</td>
+                <tr>
+            
+                <td>STRATASYS LTD</td>
+                <td>SSYS</td>
+            <td>0</td><td class="table-success">+406416</td><td class="table-danger">-0.15</td>
+                <tr>
+            
+                <td>KOMATSU LTD -SPONS ADR</td>
+                <td>KMTUY</td>
+            <td class="table-success">+86352</td><td class="table-success">+2032511</td><td class="table-danger">-0.01</td>
+                <tr>
+            
+                <td>BAIDU INC - SPON ADR</td>
+                <td>BIDU</td>
+            <td class="table-success">+13608</td><td class="table-success">+4990906</td><td class="table-success">+0.26</td>
+                <tr>
+            
+                <td>AEROVIRONMENT INC</td>
+                <td>AVAV</td>
+            <td class="table-success">+25536</td><td class="table-success">+135374</td><td class="table-danger">-0.16</td>
+                <tr>
+            
+                <td>NANO DIMENSION LTD - ADR</td>
+                <td>NNDM</td>
+            <td class="table-success">+299710</td><td class="table-danger">-2820565</td><td class="table-danger">-0.37</td>
+                <tr>
+            
+                <td>SYNOPSYS INC</td>
+                <td>SNPS</td>
+            <td class="table-success">+7784</td><td class="table-success">+1794418</td><td class="table-success">+0.01</td>
+                <tr>
+            
+                <td>TERADYNE INC</td>
+                <td>TER</td>
+            <td class="table-success">+14952</td><td class="table-success">+1607022</td><td>0.0</td>
+                <tr>
+            
+                <td>SPLUNK INC</td>
+                <td>SPLK</td>
+            <td class="table-success">+10864</td><td class="table-success">+929698</td><td class="table-danger">-0.05</td>
+                <tr>
+            
+                <td>NIU TECHNOLOGIES-SPONS ADR</td>
+                <td>NIU</td>
+            <td class="table-success">+131680</td><td class="table-success">+4358075</td><td class="table-success">+0.26</td>
+                <tr>
+            
+                <td>ANSYS INC</td>
+                <td>ANSS</td>
+            <td class="table-success">+4004</td><td class="table-success">+944939</td><td class="table-danger">-0.03</td>
+                <tr>
+            
+                <td>INTUITIVE SURGICAL INC</td>
+                <td>ISRG</td>
+            <td class="table-success">+1624</td><td class="table-success">+838993</td><td class="table-danger">-0.03</td>
+                <tr>
+            
+                <td>AMAZON.COM INC</td>
+                <td>AMZN</td>
+            <td class="table-success">+392</td><td class="table-success">+1003715</td><td class="table-danger">-0.01</td>
+                <tr>
+            
+                <td>RAVEN INDUSTRIES INC</td>
+                <td>RAVN</td>
+            <td class="table-success">+89180</td><td class="table-success">+4380812</td><td class="table-success">+0.29</td>
+                <tr>
+            
+                <td>TENCENT HOLDINGS LTD-UNS ADR</td>
+                <td>TCEHY</td>
+            <td class="table-success">+13020</td><td class="table-success">+886414</td><td>0.0</td>
+                <tr>
+            
+                <td>AUTODESK INC</td>
+                <td>ADSK</td>
+            <td class="table-success">+3472</td><td class="table-success">+1041037</td><td class="table-success">+0.02</td>
+                <tr>
+            
+                <td>ELBIT SYSTEMS LTD</td>
+                <td>ESLT</td>
+            <td class="table-success">+8064</td><td class="table-success">+735247</td><td class="table-danger">-0.01</td>
+                <tr>
+            
+                <td>NVIDIA CORP</td>
+                <td>NVDA</td>
+            <td class="table-success">+1820</td><td class="table-success">+472495</td><td class="table-danger">-0.03</td>
+                <tr>
+            
+                <td>APPLE INC</td>
+                <td>AAPL</td>
+            <td class="table-success">+7280</td><td class="table-success">+905058</td><td class="table-success">+0.01</td>
+                <tr>
+            
+                <td>EXONE CO/THE</td>
+                <td>XONE</td>
+            <td>0</td><td class="table-danger">-628414</td><td class="table-danger">-0.12</td>
+                <tr>
+            
+                <td>ROCKWELL AUTOMATION INC</td>
+                <td>ROK</td>
+            <td class="table-success">+3500</td><td class="table-success">+811456</td><td>0.0</td>
+                <tr>
+            
+                <td>HONEYWELL INTERNATIONAL INC</td>
+                <td>HON</td>
+            <td class="table-success">+2352</td><td class="table-success">+559706</td><td class="table-success">+0.01</td>
+                <tr>
+            
+                <td>ORGANOVO HOLDINGS INC</td>
+                <td>ONVO </td>
+            <td>0</td><td class="table-danger">-72951</td><td class="table-danger">-0.01</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-576GKZKB5W"></script>
