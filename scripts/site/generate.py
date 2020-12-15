@@ -12,7 +12,7 @@ from generate_change_tab import get_change_tab
 for fund in funds:
     current_holdings_df = fetch_current_holdings(fund["csv_url"])
     day_changes_df, day_start_date_str, day_end_date_str = get_days_changes(fund["name"], 1)
-    weekly_changes_df, week_start_date_str, week_end_date_str = get_days_changes(fund["name"], 5)
+    weekly_changes_df, week_start_date_str, week_end_date_str = get_days_changes(fund["name"], 7)
 
     html = get_header()
     html += f"""
