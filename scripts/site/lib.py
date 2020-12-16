@@ -30,6 +30,11 @@ def get_fund_records_count_for_date(fund_name, date_str, conn):
     count = query.fetchone()[0]
     return count
 
+def get_fund_records(fund_name, ticker, conn):
+    df = pd.read_sql_query(f"""SELECT date, company, ticker, shares, value, weight 
+        FROM {fund_name} WHERE ticker = '{ticker}';""", conn)
+    return df
+
 def get_days_changes(fund_name, period_days=0):
     count = 0
     days = 0
