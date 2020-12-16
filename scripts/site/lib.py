@@ -133,6 +133,6 @@ def get_days_changes(fund_name, period_days=0):
                     'value_diff': -(row['prev_value']),
                     'weight_diff': -(row['prev_weight']),
                 }
-                df.append(d, ignore_index=True)
+                df = df.append(d, ignore_index=True)
 
     return df, date2_str, date1_str

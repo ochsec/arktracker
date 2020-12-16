@@ -41,7 +41,7 @@ def get_change_tab(changes_df, start_date_str, end_date_str, num_days):
         if "- Added" in row["company"]:
             html += f"""<td class="table-success">+{row["shares"]}</td>"""
         elif "- Removed" in row["company"]:
-            html += f"""<td class="table-danger">+{-(row["prev_shares"])}</td>"""
+            html += f"""<td class="table-danger">{row["shares_diff"]}</td>"""
         else:
             if row["shares_diff"] > 0:
                 html += f"""<td class="table-success">+{row["shares_diff"]}</td>"""
@@ -53,7 +53,7 @@ def get_change_tab(changes_df, start_date_str, end_date_str, num_days):
         if "- Added" in row["company"]:
             html += f"""<td class="table-success">+{row["value"]}</td>"""
         elif "- Removed" in row["company"]:
-            html += f"""<td class="table-success">+{-(row["prev_value"])}</td>"""
+            html += f"""<td class="table-danger">{(row["value_diff"])}</td>"""
         else:
             if row["value_diff"] == 0:
                 html += f"""<td>{int(row["value_diff"])}</td>"""
@@ -67,7 +67,7 @@ def get_change_tab(changes_df, start_date_str, end_date_str, num_days):
         if "- Added" in row["company"]:
             html += f"""<td class="table-success">+{row["weight"]}</td>"""
         elif "- Removed" in row["company"]:
-            html += f"""<td class="table-success">+{-(row["prev_weight"])}</td>"""        
+            html += f"""<td class="table-danger">{row["weight_diff"]}</td>"""        
         else:
             if row["weight_diff"] == 0:
                 html += f"""<td>{round_half_up(row["weight_diff"], 2)}</td>"""
