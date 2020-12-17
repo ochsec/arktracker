@@ -63,19 +63,36 @@ for fund in funds:
     html += get_change_tab(day_changes_df, day_start_date_str, day_end_date_str, 1)
     html += get_change_tab(weekly_changes_df, week_start_date_str, week_end_date_str, 5)
 
-    html += """
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-576GKZKB5W"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-576GKZKB5W');
+    html += """
+        <div class="toast-container position-absolute p-3 top-0 start-50 translate-middle-x">
+            <div class="toast" data-autohide="false">
+                <div class="toast-header">
+                Privacy Notice
+                </div>
+                <div class="toast-body">
+                This site does not use cookies, track you, or record any user data.
+                <div class="mt-2 pt-2 border-top">
+                    <button type="button" id="toast-btn" class="btn btn-primary btn-sm" data-dismiss="toast">Okay</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/f9db0cd5da.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#privacy').click(function() {
+                $('.toast').toast('show');    
+            });
+
+            $('#toast-btn').click(function() {
+                $('.toast').toast('hide');
+            });
+        });
         </script>
-        </body>
-        </html>
+    </body>
+    </html>
     """
 
     file = open(f"""../site/{fund["page_name"]}""", "w")

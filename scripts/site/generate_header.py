@@ -16,7 +16,7 @@ def get_header():
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav me-auto">
             <a class="nav-link" href="#">ETFs:</a>
             <a class="nav-link" aria-current="page" active href="./arkk.html">ARKK</a>
             <a class="nav-link" href="./arkf.html">ARKF</a>
@@ -25,6 +25,10 @@ def get_header():
             <a class="nav-link" href="./arkw.html">ARKW</a>
             <a class="nav-link" href="./izrl.html">IZRL</a>
             <a class="nav-link" href="./prnt.html">PRNT</a>
+            </div>
+            <div class="navbar-nav">
+            <a class="nav-link" id="privacy" href="#">Privacy</a>
+            <a class="nav-link" href="https://github.com/ochsec/arktracker" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
             </div>
         </div>    
         </div>
