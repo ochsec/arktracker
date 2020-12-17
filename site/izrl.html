@@ -15,7 +15,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav me-auto">
             <a class="nav-link" href="#">ETFs:</a>
             <a class="nav-link" aria-current="page" active href="./arkk.html">ARKK</a>
             <a class="nav-link" href="./arkf.html">ARKF</a>
@@ -24,6 +24,10 @@
             <a class="nav-link" href="./arkw.html">ARKW</a>
             <a class="nav-link" href="./izrl.html">IZRL</a>
             <a class="nav-link" href="./prnt.html">PRNT</a>
+            </div>
+            <div class="navbar-nav">
+            <a class="nav-link" id="privacy" href="#">Privacy</a>
+            <a class="nav-link" href="https://github.com/ochsec/arktracker" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
             </div>
         </div>    
         </div>
@@ -834,9 +838,32 @@
         </div>
     </div>
     
+        <div class="toast-container position-absolute p-3 top-0 start-50 translate-middle-x">
+            <div class="toast" data-autohide="false">
+                <div class="toast-header">
+                Privacy Notice
+                </div>
+                <div class="toast-body">
+                This site does not use cookies, track you, or record any user data.
+                <div class="mt-2 pt-2 border-top">
+                    <button type="button" id="toast-btn" class="btn btn-primary btn-sm" data-dismiss="toast">Okay</button>
+                </div>
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/f9db0cd5da.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#privacy').click(function() {
+                $('.toast').toast('show');    
+            });
+
+            $('#toast-btn').click(function() {
+                $('.toast').toast('hide');
+            });
+        });
+        </script>
+    </body>
+    </html>
     
-        </body>
-        </html>
-        
