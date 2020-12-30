@@ -1,9 +1,12 @@
+import os
 import math
 import requests
 import io
 import sqlite3
 import pandas as pd
-from datetime import date, timedelta
+import numpy as np
+from datetime import date, datetime, timedelta
+from dotenv import load_dotenv
 
 def connect_db():
     conn = sqlite3.connect("../db/ArkTracker.db")
@@ -97,6 +100,12 @@ def get_days_changes(fund_name, period_days=0):
 
     print(f"New companies for {fund_name}: {new_companies}")
 
+    for company in new_companies:
+        for _, row in df1.iterrows():
+            if row['company'] == company:
+                print(f"New company row: {row}")
+
+
     removed_companies = []
 
     for i, irow in df2.iterrows():
@@ -141,3 +150,23 @@ def get_days_changes(fund_name, period_days=0):
                 df = df.append(d, ignore_index=True)
 
     return df, date2_str, date1_str
+
+def get_candles(ticker, res, start_date, end_date):
+    load_dotenv()
+    FINNHUB_KEY = os.getenv('FINNHUB_KEY')
+    FINNHUB_API_V1 = os.getenv('FINNHUB_API_V1')
+
+    start_date_obj = datetime.strptime(start_date, '%Y-%m-%d')
+    end_date_obj = datetime.strptime(end_date, '%Y-%m-%d')
+
+    start_timestamp = int(start_date_obj.timestamp())
+    end_timestamp = int(end_date_obj.timestamp())
+
+    resp = requests.get(f'{FINNHUB_API_V1}/stock/candle?symbol={ticker}&resolution={res}&from={start_timestamp}&to={end_timestamp}&token={FINNHUB_KEY}')
+    
+    df = pd.DataFrame(resp.json())
+    df.rename(columns={'c': 'close', 'h': 'high', 'l': 'low', 'o': 'open', 't': 'date', 'v': 'volume'}, inplace=True)
+    df['simple_rtn']=df['close'].pct_change()
+    df['log_rtn']=np.log(df['close']/df['close'].shift(1))
+
+    return df
